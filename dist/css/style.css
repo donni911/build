@@ -1,73 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Inter:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&display=swap");
 @font-face {
-  font-family: OpenSans;
+  font-family: TT Norms Pro;
+  font-weight: 500;
+  src: url("/src/fonts/TT Norms Pro Medium.woff") format("woff"), url("/src/fonts/TT Norms Pro Medium.woff2") format("woff2");
   font-display: swap;
-  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: TT Travels;
   font-weight: 700;
+  src: url("/src/fonts/tt-travels-bold.woff") format("woff"), url("/src/fonts/tt-travels-bold.woff2") format("woff2");
+  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: OpenSans;
-  font-display: swap;
-  src: url("../fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-BoldItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: OpenSans;
-  font-display: swap;
-  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: OpenSans;
-  font-display: swap;
-  src: url("../fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: OpenSans;
-  font-display: swap;
-  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: OpenSans;
-  font-display: swap;
-  src: url("../fonts/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/OpenSans-LightItalic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans";
-  font-display: swap;
-  src: url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans";
-  font-display: swap;
-  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "OpenSans";
-  font-display: swap;
-  src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff");
+  font-family: TT Travels;
   font-weight: 600;
+  src: url("/src/fonts/tt-travels-demibold.woff") format("woff"), url("/src/fonts/tt-travels-demibold.woff2") format("woff2");
+  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: OpenSans;
+  font-family: TT Norms Pro;
+  font-weight: 700;
+  src: url("/src/fonts/TT Norms Pro Bold.woff") format("woff"), url("/src/fonts/TT Norms Pro Bold.woff2") format("woff2");
   font-display: swap;
-  src: url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/OpenSans-SemiboldItalic.woff") format("woff");
-  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: DM Sans;
+  font-weight: 500;
+  src: url("/src/fonts/dm-sans-regular.woff") format("woff"), url("/src/fonts/dm-sans-regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Jeko;
+  font-weight: 600;
+  src: url("/src/fonts/FontsFree-Net-Jeko-Bold.woff") format("woff"), url("/src/fonts/FontsFree-Net-Jeko-Bold.woff2") format("woff2");
+  font-display: swap;
   font-style: normal;
 }
 * {
