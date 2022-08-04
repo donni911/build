@@ -1,8 +1,8 @@
 <header id='header' class="header">
 <div class="header__container _container">
-  <div class="header__logo">
-    <img src="/src/img/logo.svg" alt="logo">
-  </div>
+  <a href="#" class="header__logo">
+    @@include('../img/logo.svg',{})  
+  </a>
   <nav class="header__menu menu">
     <ul class="menu__row">
       <li class="menu__item">
@@ -25,8 +25,33 @@
       </li>
       <li class="menu__item">
         <a class="menu__link">Ще</a>
+        <a href="#">
+          @@include('../img/arrow.svg',{})
+        </a>
       </li>
     </ul>
   </nav>
+  <div class="header__component header-component">
+    <ul class="header-component__row">
+      <li class="header-component__item">
+        <a href="#" class="header-component__language"></a>
+      </li>
+      <li class="header-component__item">
+        <a href="#" class="header-component__search">
+          @@include('../img/search.svg',{})
+        </a>
+      </li>
+      <li class="header-component__item">
+        <a href="#" class="header-component__heart">
+          @@include('../img/heart.svg',{})
+        </a>
+      </li>
+      <li class="header-component__item">
+        <a href="#" class="header-component__heart">
+          @@include('../img/user.svg',{})
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 </header>

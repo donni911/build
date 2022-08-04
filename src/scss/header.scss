@@ -1,1 +1,50 @@
+.header {
+
+}
+
+._container {    
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    .header__logo {
+        
+    }
+    
+}
+.header__menu {
  
+    .menu__row {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 24.65px;
+        margin: 0;
+  
+    }
+    .menu__item {
+        align-items: center;
+        margin-right: 18px;
+    }
+    .menu__link {
+        font-family: TT Norms Pro sans-serif;
+        color: #2A1A1A;
+        font-size: 16px;
+        line-height: 162%;
+        font-weight: 400;
+    }
+ 
+}
+.header-component__row {
+    display: flex;
+    align-items: center;
+    .header-component__item:not(:last-child) {
+        margin-right: 18px;
+
+    }
+}
