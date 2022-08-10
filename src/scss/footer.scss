@@ -1,0 +1,51 @@
+.footer{
+    
+    margin-top: 60px;
+    background-color: #FFE7DC;
+    
+    &_container{
+        display:flex;
+        align-items: center;
+    }
+    &__logo{
+      margin-bottom: 103px;
+    }
+      
+}
+.menu-footer{
+   margin-left: 161.65px;
+    &_ul{
+        display:flex;
+        margin: 30px auto;
+       
+ 
+    }
+    &_link{
+        font-family:'TT Norms Pro';
+        font-size: 16px;
+        font-weight: 400px;
+        font-style: normal;
+        color:#2A1A1A;
+    }
+    &_list:not(last_child){
+        margin-bottom:14px;
+
+    }
+    &_text{
+        font-size:18px;
+    }
+    &_logo{
+        margin:0px auto;
+    }
+    &_column{
+        justify-content: space-between;
+    }
+    &_column-four{
+        margin-left:228px;
+    }
+}
+.text-two{
+    margin-top: 45px;
+}
+
+

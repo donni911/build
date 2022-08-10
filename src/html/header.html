@@ -1,18 +1,31 @@
 <header id='header' class="header">
-<div>
-  <img src="@img/shuba_logo.svg"alt="logo">
-  <nav>
-    <li><a href='#'>Рецепти</a></li>
-    <li><a href='#'>Гастро клуб</a></li>
-    <li><a href='#'>Шуба святкує</a></li>
-    <li><a href='#'>Шуба навчає</a></li>
-    <li><a href='#'>Шуба дрінкує</a></li>
-    <li><a href='#'>Хелсі Шуба</a></li>
-    <li><a href='#'>Ще</a></li>
-      </nav>
-      <img src="@img/search.svg" alt="search">
-      <img src="@img/heart.svg"alt="heart">
-      <img src="@img/user.svg" alt="user">
-      </div>
-    
+<div class="header__container _container">
+  <a href="#" class="header__logo">@@include('../img/shuba_logo.svg',{})</a>
+   <nav class="menu">
+      <ul class="menu_ul">
+        <li id="menu" class="menu_list"><a href="#" class="menu_link">Рецепти</a></li>
+        <li class="menu_list"><a href="#"class="menu_link">Гастро клуб</a></li>
+        <li class="menu_list"><a href="#" class="menu_link">Шуба святкує</a></li>
+        <li class="menu_list"><a href="#" class="menu_link">Шуба навчає </a></li>
+        <li class="menu_list"><a href="#" class="menu_link">Шуба дрінкує</a></li>
+        <li class="menu_list"><a href="#" class="menu_link">Хелсі Шуба</a></li>  
+        <li class="menu_list"><a href="#" class="menu_link" >Ще</a></li>    
+      </ul>
+      <div class="menu_active">
+        <span></span>
+        <div class="dropdown">
+            <div class="dropdown-content">
+            <a href="#" class="menu_link">Шуба TV</a>
+            <a href="#" class="menu_link">Експерти смаку</a>
+          </div>
+        </div>      
+      </div>    
+    </nav>
+    <div class="header_icons header-icons">
+      <button class="button">RU</button>
+      <a href="#" class="header-icons__link">@@include('../img/search.svg',{})</a>
+      <a href="#" class="header-icons__link">@@include('../img/heart.svg',{})</a>
+      <a href="#" class="header-icons__link"> @@include('../img/user.svg',{})</a>
+    </div>
+  </div>  
 </header>

@@ -1,0 +1,125 @@
+.header{
+    position:fixed;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:50;
+    &__container{ 
+        display:flex;
+        align-items: center;
+    }
+    &-icons__link{
+    margin-right:18px;
+    }
+}
+._container{
+    max-width:1110px;
+    min-height: 60px;
+    margin:0px auto;
+    
+}
+.menu{
+    margin-left: 24.65px;
+    margin-right: 151px;
+    display:flex;
+    align-items: center;
+    &_ul{
+        margin: 0;
+        display:flex;
+    }
+    &_list {
+        &:not(:last-child){
+            margin-right: 18px;
+        } 
+
+    }
+    &_link{
+        font-family: 'TT Norms Pro';
+        font-size:16px;
+        text-align: left;
+        font-weight: 400;
+        text-decoration: none;
+        color: #2A1A1A;
+        line-height: 162%;
+    }
+    &_link_active{
+        font-family: 'TT Norms Pro';
+        font-size:16px;
+        text-align: left;
+        font-weight: 400;
+        text-decoration: none;
+        color: #2A1A1A;
+        line-height: 162%;
+    }
+}
+   
+.header-icons {
+    margin-right: 0;
+}
+ .button{
+    background-color: white;
+    color: #85A9C7;
+    font-family: 'TT Norms Pro';
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 18px;
+    font-style: normal;
+    margin-right: 18px;
+}
+/* dropdpwn menu*/
+.dropdown{
+    position:relative;
+    display:inline-block;
+   
+}
+.dropdown-content {
+    a {
+        color: black;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+}
+.dropdown-content  {
+    margin-top: 28px;
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width:156px;
+    min-height: 85px;
+    border-radius: 0px 0px 20px 20px;
+}
+.menu_active{
+    position: relative;
+        span{
+            &:before,&:after {
+                content: "";
+                position: absolute;
+                top:11px;
+                height: 7px;
+                width: 1px;
+                background-color: black;
+                margin-left: 27px;
+            }
+            &:before {
+                transform: rotate(-45deg);
+                left: 0;
+            }
+            &:after {
+                transform: rotate(45deg);
+                left:5px;
+            }
+
+        }
+    }
+    
+    @media (max-width:375px) {
+
+    }
+
+
+
+
+
+
