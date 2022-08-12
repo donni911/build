@@ -165,3 +165,158 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .menu-dropdown:hover .menu-dropdown__dropbtn {background-color: white;}
+
+// ---------BURGER------------------------
+
+// #sidebar {
+// 	position: fixed;
+// 	width: 250px;
+// 	height: 100%;
+// 	background: #57626f;
+// 	border-right: 4px solid #e0e5ea;
+// 	left: -250px;
+// }
+// #sidebar.active {
+// 	left: 0px;
+// }
+// #sidebar ul, li:first-child {
+// 	text-align: center;
+// 	color: white;
+// 	font-size: 1.92em;
+// 	list-style: none;
+// 	padding: 25px 10px 10px 10px;
+// }
+// #sidebar ul, li:not(:first-child) {
+// 	width: 90%;
+// 	margin-left: 10%;
+// 	font-size: 1.1em;
+// 	list-style: none;
+// 	padding: 15px 10px;
+// }
+// #sidebar ul, li, a {
+// color: #dfe5eb;
+// text-decoration: none;
+
+// }
+// #sidebar ul, li, a:hover {
+// 	color: #8d1b91;
+	
+// }
+// .toggle-btn {
+// 	position: absolute;
+// 	left: 270px;
+// 	top: 20px;
+// 	background-color: #dfe5eb;
+// 	padding: 10px;
+// 	border-radius: 12px;
+// 	cursor: pointer;
+
+// 	span{
+// 		display: block;
+// 		width: 25px;
+// 		height: 4px;
+// 		background-color: #666;
+// 		margin: 4px 0;
+		
+// 	}
+// }
+
+// #sidebar .toggle-btn:hover {
+// 	background-color: #556270;
+// }
+// #sidebar .toggle-btn:hover span {
+// 	background-color: #fafafa;
+// }
+// ------------------------------RECIPES-----------------------------------
+.hd-menu {
+	
+
+	// .hd-menu__recipes
+
+	&__recipes {
+
+	}
+}
+.hd-recipes {
+	position: absolute;
+	max-width: 320px;
+	
+
+	// .hd-recipes__body
+
+	&__body {
+	}
+
+	// .hd-recipes__colums
+
+	&__colums {
+	}
+
+	// .hd-recipes__colum
+
+	&__colum {
+	}
+
+	// .hd-recipes__top
+
+	&__top {
+		position: relative;
+	}
+
+	// .hd-recipes__image
+
+	&__image {
+	}
+
+	// .hd-recipes__day
+
+	&__day {
+		position: absolute;
+		left: 40px;
+		top: 20px;
+		padding: 8px 20px 12px 20px;
+		border-radius: 20px;
+		background-color: #FF8B3C;
+		color: white;
+		font-family: $fontNorms;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 112%;
+	}
+
+	// .hd-recipes__bottom
+
+	&__bottom {
+		background: #FFE7DC;
+		border-radius: 0px 0px 20px 20px;
+	}
+
+	// .hd-recipes__author
+
+	&__author {
+	}
+
+	// .hd-recipes__title
+
+	&__title {
+	}
+
+	// .hd-recipes__details
+
+	&__details {
+	}
+
+	// .hd-recipes__time
+
+	&__time {
+	}
+}
+.hd-main {
+
+	// .hd-main__column
+
+	&__column {
+		
+	}
+}

@@ -249,3 +249,29 @@ body {
 .menu-dropdown:hover .menu-dropdown__dropbtn {
   background-color: white;
 }
+
+.hd-recipes {
+  position: absolute;
+  max-width: 320px;
+}
+.hd-recipes__top {
+  position: relative;
+}
+.hd-recipes__day {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  padding: 8px 20px 12px 20px;
+  border-radius: 20px;
+  background-color: #FF8B3C;
+  color: white;
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+}
+.hd-recipes__bottom {
+  background: #FFE7DC;
+  border-radius: 0px 0px 20px 20px;
+}

@@ -39,12 +39,44 @@
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link">Рецепти</a>
-            <div class="menu__recipes recipes-box">
-              <div class="recipes__body">
-                <div class="recipes__colums">
-                  <div class="recipes__colum recipes-colum_img">
-                    a.recipes-list
-                  </div>
+            <div class="hd-menu__recipes hd-recipes">
+              <div class="hd-recipes__body">
+                <div class="hd-recipes__colums">
+                  <article class="hd-recipes__colum hd-main__column">
+                    <div class="hd-recipes__top">
+                      <a href="#" class="hd-recipes__image">
+                        <img src="../img/header/header-recipes.jpg" alt="recipes">
+                      </a>
+                      <button class="hd-recipes__day">Рецепт дня</button>
+                    </div>
+                    <div class="hd-recipes__bottom">
+                      <a href="#" class="hd-recipes__author">Надія Ковбасенко</a>
+                      <h3 class="hd-recipes__title">Справжній український борщ із шкварками 
+                        та сметанкою <span></span></h3>
+                      <div class="hd-recipes__details">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1603_21876)">
+<circle cx="12" cy="8" r="6.5" stroke="#CA4D70" stroke-width="1.5"/>
+<path d="M12 4.5V8H14" stroke="#CA4D70" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_1603_21876" x="0" y="0" width="24" height="24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1603_21876"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1603_21876" result="shape"/>
+</filter>
+</defs>
+</svg>
+
+                        <p class="hd-recipes__time">20хв</p>
+                      </div>
+                    </div>
+                  </article>
                 </div>
               </div>
             </div>
@@ -93,7 +125,23 @@
         </div>
       </div>
   </div>
-</header>
+<!-- <div id="sidebar">
+  <div class="toggle-btn" onclick="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul>
+    <li>Menu</li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Contacts</a></li>
+    <li><a href="#">Phone</a></li>
+    
+  </ul>
+</div> -->
+
+
+
     <main class="main">
  
     </main>
@@ -102,7 +150,7 @@
 </footer>
     
 <script src="js/app.min.js"></script>
-  
+<script src="js/script.js"></script>
 </body>
 
 </html>
