@@ -1,51 +1,45 @@
 .footer{
-    
-    margin-top: 60px;
+    margin-top: 150px;
     background-color: #FFE7DC;
-    
     &_container{
         display:flex;
-        align-items: center;
-    }
-    &__logo{
-      margin-bottom: 103px;
-    }
-      
+        justify-content: space-between;
+        padding: 36px;
+    } 
 }
 .menu-footer{
-   margin-left: 161.65px;
     &_ul{
-        display:flex;
-        margin: 30px auto;
-       
- 
+        display: flex;  
+    }
+    &_logo{
+        &:not(:last-child){
+            margin-right: 18px;
+        } 
     }
     &_link{
         font-family:'TT Norms Pro';
         font-size: 16px;
         font-weight: 400px;
         font-style: normal;
+        line-height: 18px;
         color:#2A1A1A;
     }
-    &_list:not(last_child){
-        margin-bottom:14px;
-
+    &_list {
+        padding-bottom: 14px;
     }
     &_text{
         font-size:18px;
     }
-    &_logo{
-        margin:0px auto;
-    }
     &_column{
-        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        margin-right: 53px;
+        min-width: 137px;
     }
-    &_column-four{
-        margin-left:228px;
+    &_author{
+        margin-top: 45px;
+    }
+    &_text{
+        margin-right: 4px;
     }
 }
-.text-two{
-    margin-top: 45px;
-}
-
-

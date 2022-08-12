@@ -1,31 +1,90 @@
 <header id='header' class="header">
-<div class="header__container _container">
-  <a href="#" class="header__logo">@@include('../img/shuba_logo.svg',{})</a>
-   <nav class="menu">
+  <div class="header__container _container">
+    <a href="#" class="header__logo">@@include('../img/shuba_logo.svg',{})</a>
+    <nav class="menu">
       <ul class="menu_ul">
-        <li id="menu" class="menu_list"><a href="#" class="menu_link">Рецепти</a></li>
-        <li class="menu_list"><a href="#"class="menu_link">Гастро клуб</a></li>
-        <li class="menu_list"><a href="#" class="menu_link">Шуба святкує</a></li>
-        <li class="menu_list"><a href="#" class="menu_link">Шуба навчає </a></li>
-        <li class="menu_list"><a href="#" class="menu_link">Шуба дрінкує</a></li>
-        <li class="menu_list"><a href="#" class="menu_link">Хелсі Шуба</a></li>  
-        <li class="menu_list"><a href="#" class="menu_link" >Ще</a></li>    
-      </ul>
-      <div class="menu_active">
-        <span></span>
-        <div class="dropdown">
-            <div class="dropdown-content">
-            <a href="#" class="menu_link">Шуба TV</a>
-            <a href="#" class="menu_link">Експерти смаку</a>
-          </div>
-        </div>      
-      </div>    
+          <li class="menu_list">
+            <a href="#" class="menu_link">Рецепти</a>
+          </li>
+          <li class="menu_list">
+            <a href="#"class="menu_link">Гастро клуб</a>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#" class="menu_link">Фуд експерти</a>
+                <a href="#" class="menu_link">Книги, фільми, серіали про їжу</a>
+                <a href="#" class="menu_link">Food story</a>
+                <a href="#" class="menu_link">Гастромандри</a>
+              </div>
+            </div> 
+          </li>
+          <li class="menu_list">
+            <a href="#" class="menu_link">Шуба святкує</a>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#" class="menu_link">Великоднє меню</a>
+                <a href="#" class="menu_link">Різдвяне меню</a>
+                <a href="#" class="menu_link">Меню на свята</a>
+                <a href="#" class="menu_link">День народження</a>
+                <a href="#" class="menu_link">Новорічне меню</a>
+                <a href="#" class="menu_link">Пікнік/барбекю</a>
+              </div>
+            </div> 
+          </li>
+          <li class="menu_list">
+            <a href="#" class="menu_link">Шуба навчає </a>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#" class="menu_link">Хау ту</a>
+                <a href="#" class="menu_link">Зберігання, організація</a>
+                <a href="#" class="menu_link">Гастролікбез</a>
+              </div>
+            </div> menu-link__main
+          </li>
+          <li class="menu_list">
+            <div class="dropdown">
+            <a href="#" class="menu_link menu-link__main">Шуба дрінкує</a>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#" class="menu_link">Коктейлі</a>
+                <a href="#" class="menu_link">Напої</a>
+              </div>
+            </div>  
+          </li>
+          <li class="menu_list">
+            <a href="#" class="menu_link menu-link__main">Хелсі Шуба</a>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#" class="menu_link">Правильне харчування</a>
+                <a href="#" class="menu_link">Меню та рецепти</a>
+                <a href="#" class="menu_link">Суперфуди</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu_list">
+            <a href="#" class="menu_link">Ще
+            <div class="dropdown">
+              <a class="dropbtn"> @@include('../img/arrow.svg',{})</a>
+              <div class="dropdown-content">
+                <a href="#" class="menu_link">Шуба TV</a>
+                <a href="#" class="menu_link">Експерти смаку</a>
+              </div>
+            </div>  
+          </li>       
+        </ul>  
     </nav>
-    <div class="header_icons header-icons">
-      <button class="button">RU</button>
-      <a href="#" class="header-icons__link">@@include('../img/search.svg',{})</a>
-      <a href="#" class="header-icons__link">@@include('../img/heart.svg',{})</a>
-      <a href="#" class="header-icons__link"> @@include('../img/user.svg',{})</a>
+    <div class="header_icons">
+      <div class="header_icon header-icon">
+        <button class="header-icon__button">RU</button>
+      </div>
+      <div class="header_icon header-icon">
+        <a href="#" class="header-icon__link">@@include('../img/search.svg',{})</a>
+      </div>
+      <div class="header_icon header-icon">
+        <a href="#" class="header-icon__link">@@include('../img/heart.svg',{})</a>
+      </div>
+      <div class="header_icons header-icon">
+        <a href="#" class="header-icon__link"> @@include('../img/user.svg',{})</a>
+      </div>
     </div>
   </div>  
 </header>
