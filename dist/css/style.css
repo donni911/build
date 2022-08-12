@@ -1,49 +1,49 @@
 @font-face {
-  font-family: TT Norms Pro;
+  font-family: TTNorms;
   font-display: swap;
-  src: url("../fonts/TT Norms Pro Medium.woff2") format("woff2"), url("../fonts/TT Norms Pro Medium.woff") format("woff");
+  src: url("../fonts/TTNorms-Bold.woff2") format("woff2"), url("../fonts/TTNorms-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: TTNorms;
+  font-display: swap;
+  src: url("../fonts/TTNorms-ExtraLight.woff2") format("woff2"), url("../fonts/TTNorms-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Play;
+  font-display: swap;
+  src: url("../fonts/Play-Bold.woff2") format("woff2"), url("../fonts/Play-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: TTNorms;
+  font-display: swap;
+  src: url("../fonts/TTNorms-Medium.woff2") format("woff2"), url("../fonts/TTNorms-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: TT Travels;
+  font-family: TTTravels;
   font-display: swap;
-  src: url("../fonts/tt-travels-bold.woff2") format("woff2"), url("../fonts/tt-travels-bold.woff") format("woff");
+  src: url("../fonts/TTTravels-Bold.woff2") format("woff2"), url("../fonts/TTTravels-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: TT Travels;
+  font-family: Uni Sans Heavy;
   font-display: swap;
-  src: url("../fonts/tt-travels-demibold.woff2") format("woff2"), url("../fonts/tt-travels-demibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: TT Norms Pro;
-  font-display: swap;
-  src: url("../fonts/TT Norms Pro Regular.woff2") format("woff2"), url("../fonts/TT Norms Pro Regular.woff") format("woff");
+  src: url("../fonts/Uni Sans Heavy.woff2") format("woff2"), url("../fonts/Uni Sans Heavy.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: TT Norms Pro;
+  font-family: TTTravels;
   font-display: swap;
-  src: url("../fonts/TT Norms Pro Bold.woff2") format("woff2"), url("../fonts/TT Norms Pro Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: DM Sans;
-  font-display: swap;
-  src: url("../fonts/dm-sans-regular.woff2") format("woff2"), url("../fonts/dm-sans-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Jeko-Bold";
-  font-display: swap;
-  src: url("../fonts/FontsFree-Net-Jeko-Bold.woff2") format("woff2"), url("../fonts/FontsFree-Net-Jeko-Bold.woff") format("woff");
+  src: url("../fonts/TTTravels-DemiBold.woff2") format("woff2"), url("../fonts/TTTravels-DemiBold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -117,11 +117,13 @@ a:hover {
   text-decoration: none;
 }
 
-ul {
+a, ul {
+  margin: 0px 0px 0px 0px;
   padding: 0;
 }
 
 ul li {
+  margin: 0px 0px 0px 0px;
   padding: 0;
   list-style: none;
 }
@@ -145,41 +147,105 @@ h6 {
 }
 
 /*--------------------*/
+body {
+  color: #2A1A1A;
+  font-size: 18px;
+  font-family: "TTTravels";
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 ._container {
-  max-width: 1080px;
-  padding: 0 15px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 0px 20px;
 }
 
 .header__container {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   min-height: 60px;
+  justify-content: space-between;
 }
-.header__menu .menu__row {
+.header__menu {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 24.65px;
-  margin: 0;
-}
-.header__menu .menu__item {
   align-items: center;
-  margin-right: 18px;
-}
-.header__menu .menu__link {
-  font-family: TT Norms Pro sans-serif;
-  color: #2A1A1A;
-  font-size: 16px;
-  line-height: 162%;
-  font-weight: 400;
 }
 
-.header-component__row {
+.menu__list {
+  display: flex;
+  justify-content: left;
+}
+.menu__item:not(:last-child) {
+  margin-right: 18px;
+}
+.menu__link {
+  align-items: center;
+  font-family: "TTNorms";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #2A1A1A;
+}
+
+.info-header {
+  display: flex;
+}
+.info-header__item {
   display: flex;
   align-items: center;
 }
-.header-component__row .header-component__item:not(:last-child) {
+.info-header__item:not(:last-child) {
   margin-right: 18px;
+}
+.menu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.menu-dropdown__dropbtn {
+  background-color: white;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding-left: 2px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 22px;
+  left: -50px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0 0 15px 15px;
+  padding: 10px 0px 18px 0px;
+}
+.dropdown-content__link {
+  color: black;
+  padding: 6px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-family: "TTNorms";
+}
+.dropdown-content__link:hover {
+  background-color: #ddd;
+}
+
+/* Change color of dropdown links on hover */
+/* Show the dropdown menu on hover */
+.menu-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.menu-dropdown:hover .menu-dropdown__dropbtn {
+  background-color: white;
 }

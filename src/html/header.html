@@ -1,57 +1,51 @@
 <header id='header' class="header">
-<div class="header__container _container">
-  <a href="#" class="header__logo">
-    @@include('../img/logo.svg',{})  
-  </a>
-  <nav class="header__menu menu">
-    <ul class="menu__row">
-      <li class="menu__item">
-        <a class="menu__link">Рецепти</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Гастро клуб</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Шуба святкує</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Шуба навчає</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Шуба дрінкує</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Хелсі Шуба</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link">Ще</a>
-        <a href="#">
-          @@include('../img/arrow.svg',{})
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div class="header__component header-component">
-    <ul class="header-component__row">
-      <li class="header-component__item">
-        <a href="#" class="header-component__language"></a>
-      </li>
-      <li class="header-component__item">
-        <a href="#" class="header-component__search">
-          @@include('../img/search.svg',{})
-        </a>
-      </li>
-      <li class="header-component__item">
-        <a href="#" class="header-component__heart">
-          @@include('../img/heart.svg',{})
-        </a>
-      </li>
-      <li class="header-component__item">
-        <a href="#" class="header-component__heart">
-          @@include('../img/user.svg',{})
-        </a>
-      </li>
-    </ul>
+  <div class="header__container _container">
+      <a href="#" class="header__logo">
+        @@include('../img/header/logo.svg',{})
+      </a>
+      
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Рецепти</a>
+            <div class="menu__recipes recipes-box">
+              <div class="recipes__body">
+                <div class="recipes__colums">
+                  <div class="recipes__colum recipes-colum_img">
+                    a.recipes-list
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">Гастро клуб</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Шуба святкує</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Шуба навчає</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Шуба дрінкує</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Хелсі Шуба</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Ще</a></li>
+        </ul>      
+        <div class="menu__dropdown menu-dropdown">
+          <div class="menu-dropdown__dropbtn"><span>@@include('../img/header/arrow-header.svg',{})</span></div>
+          <div class="menu-dropdown__dropdown-content dropdown-content">
+            <a href="#" class="dropdown-content__link">Шуба TV</a>
+            <a href="#" class="dropdown-content__link">Експерти смаку</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__info info-header">
+        <div class="info-header__item">
+          <a class="info-header__item_language">RU</a>
+        </div>
+        <div class="info-header__item">
+          <a class="info-header__item_search">@@include('../img/header/search.svg',{})</a>
+        </div>
+        <div class="info-header__item">
+          <a class="info-header__item_heart">@@include('../img/header/heart.svg',{})</a>
+        </div>
+        <div class="info-header__item">
+          <a class="info-header__item_user">@@include('../img/header/user.svg',{})</a>
+        </div>
+      </div>
   </div>
-</div>
 </header>

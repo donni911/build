@@ -1,13 +1,53 @@
-$font-inter: "Inter", sans-serif;
-$font-montserrat: "Montserrat", sans-serif;
+//Шрифт за зомовчуванням =======================================
+$fontTravels: "TTTravels";
+$fontNorms: "TTNorms";
+$fontSize: rem(18);
 
-$primary: #192252;
-$primary-word: #192252;
-$primary-button: #0e1734;
-$section-pd-lg: 80px 0px;
-$section-pd-md: 40px 0px;
-$section-pd-sm: 20px 0px;
+//Основні кольори===================================
+$mainColor: #000;
+
+//Настройки =======================================
+//@@include('../img/user.svg',{})
+//Mінімальна ширина сторінки
+$minWidth: 320;
+//Ширина макета===================================
+$maxWidth: 1440;
+//Ширина контейнеру================================
+$maxWidthContainer: 1150;
+//Отступ безпеки
+$containerPadding: 30;
+//Тип адаптива
+// 1 = отзивчивість(без брайкпоінтов)
+//2 = по брек поінтам
+$responsiveType: 1;
 
 
+//Ширина спрацювання першого брекпоінта
+$containerWidth: $maxWidthContainer + $containerPadding;
 
-$gray: #848fac;
+
+//Брек-поінти
+$md1: $maxWidthContainer + 12;//PC
+$md2: 991.98px; //Table
+$md3: 767.98px;//Mobile
+$md4: 479.98px;
+
+//Загальні параметри
+body {
+	color: #2A1A1A;
+	font-size: 18px;
+	font-family: $fontTravels;
+
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
