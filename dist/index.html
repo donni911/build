@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="Image/x-icon" href="img/favicon.jpg" rel="icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Cootels</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
@@ -42,7 +39,7 @@
             <div class="hd-menu__recipes hd-recipes">
               <div class="hd-recipes__body">
                 <div class="hd-recipes__colums">
-                  <article class="hd-recipes__colum hd-main__column">
+                  <article class="hd-recipes__column hd-main__column">
                     <div class="hd-recipes__top">
                       <a href="#" class="hd-recipes__image">
                         <img src="../img/header/header-recipes.jpg" alt="recipes">
@@ -86,18 +83,20 @@
           <li class="menu__item"><a href="#" class="menu__link">Шуба навчає</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Шуба дрінкує</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Хелсі Шуба</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Ще</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Ще <span></span></a>
+            <div class="hd-menu__additional additional-menu">
+              <ul class="additional-menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Шуба TV</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Експерти смаку</a>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>      
-        <div class="menu__dropdown menu-dropdown">
-          <div class="menu-dropdown__dropbtn"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 4L6 8L10 4" stroke="#2A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span></div>
-          <div class="menu-dropdown__dropdown-content dropdown-content">
-            <a href="#" class="dropdown-content__link">Шуба TV</a>
-            <a href="#" class="dropdown-content__link">Експерти смаку</a>
-          </div>
-        </div>
       </nav>
       <div class="header__info info-header">
         <div class="info-header__item">
@@ -125,6 +124,7 @@
         </div>
       </div>
   </div>
+</header>
 <!-- <div id="sidebar">
   <div class="toggle-btn" onclick="openMenu()">
     <span></span>

@@ -11,7 +11,7 @@
             <div class="hd-menu__recipes hd-recipes">
               <div class="hd-recipes__body">
                 <div class="hd-recipes__colums">
-                  <article class="hd-recipes__colum hd-main__column">
+                  <article class="hd-recipes__column hd-main__column">
                     <div class="hd-recipes__top">
                       <a href="#" class="hd-recipes__image">
                         <img src="../img/header/header-recipes.jpg" alt="recipes">
@@ -37,15 +37,20 @@
           <li class="menu__item"><a href="#" class="menu__link">Шуба навчає</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Шуба дрінкує</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Хелсі Шуба</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Ще</a></li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Ще <span></span></a>
+            <div class="hd-menu__additional additional-menu">
+              <ul class="additional-menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Шуба TV</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Експерти смаку</a>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>      
-        <div class="menu__dropdown menu-dropdown">
-          <div class="menu-dropdown__dropbtn"><span>@@include('../img/header/arrow-header.svg',{})</span></div>
-          <div class="menu-dropdown__dropdown-content dropdown-content">
-            <a href="#" class="dropdown-content__link">Шуба TV</a>
-            <a href="#" class="dropdown-content__link">Експерти смаку</a>
-          </div>
-        </div>
       </nav>
       <div class="header__info info-header">
         <div class="info-header__item">
@@ -62,6 +67,7 @@
         </div>
       </div>
   </div>
+</header>
 <!-- <div id="sidebar">
   <div class="toggle-btn" onclick="openMenu()">
     <span></span>

@@ -1,4 +1,5 @@
 .header {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
 
 	// .header__container
 
@@ -7,6 +8,7 @@
 		align-items: center;
 		min-height: 60px;
 		justify-content: space-between;
+		position: relative;
 	
 	}
 
@@ -63,10 +65,88 @@
 		font-size: 16px;
 		line-height: 162%;
 		color: #2A1A1A;
-		
+		transition: all 0.3s ease;
+		&:hover {
+			color: #8E0038;
+		}
 	}
 	
+
+// -----------------------------------------
+		span {
+			border: solid black;
+			border-width: 0 2px 2px 0px;
+			display: inline-block;
+			padding: 3px;
+			transform: rotate(45deg);
+			transition: all 0.3s ease;
+			margin-left: 2px;
+			&:hover {
+				// transform: rotate(-135deg);
+			}
+		}
+		// ------------------ЩЕ--------------------
+	.menu__item {
+		&:hover .additional-menu{
+			display: block;
+		}
+		&:hover span {
+			transform: rotate(-135deg);
+		}
+		
+	}
+	.hd-menu {
+
+		// .hd-menu__additional
+
+		&__additional {
+		}
 }
+
+
+.additional-menu {
+	position: absolute;
+	top: 0px;
+	padding-top: 60px;
+	display: none;
+
+		// .additional-menu__list
+
+	&__list {
+		background: #fff;
+		min-width: 156px;
+		padding: 16px 20px 23px 20px;
+		border-radius: 0px 0px 20px 20px;
+		filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.06)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
+		z-index: -1;
+			
+	}
+}
+.menu {
+
+	// .menu__item
+
+	&__item {
+	}
+
+	// .menu__link
+
+	&__link {
+	}
+}
+// ------------------ARROW--------------------------
+			// border: solid black;
+			// border-width: 0 2px 2px 0px;
+			// display: inline-block;
+			// padding: 3px;
+			// transform: rotate(45deg);
+			// transition: all 0.3s ease;
+			// &:hover {
+			// 	transform: rotate(-135deg);
+			// }
+		
+}
+	
 
 .info-header {
 	display: flex;
@@ -102,159 +182,47 @@
 	}
 }
 // -------ARROW--------------------------------
-.menu {
-
-	// .menu__dropdown
-
-	&__dropdown {
-
-		}
-
-	}
-
-.menu-dropdown {
-	position: relative;
-	display: inline-block;
-
-	// .menu-dropdown__dropbtn
-
-	&__dropbtn {
-		background-color: white;
-		color: white;
-		font-size: 16px;
-		border: none;
-		padding-left: 2px;
-	}
-
-	// .menu-dropdown__dropdown-content
-
-	&__dropdown-content {
-	}
-}
-.dropdown-content {
-	display: none;
-	position: absolute;
-	top: 22px;
-	left: -50px;
-	background-color: white;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	border-radius: 0 0 15px 15px;
-	padding: 10px 0px 18px 0px;
-
-	// .dropdown-content__link
-
-	&__link {
-		color: black;
-		padding: 6px 20px;
-		text-decoration: none;
-		display: block;
-		font-size: 16px;
-		font-family: $fontNorms;
-		&:hover {background-color: #ddd;}
-	}
-}
-/* Change color of dropdown links on hover */
 
 
-/* Show the dropdown menu on hover */
-.menu-dropdown:hover .dropdown-content {
-	display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.menu-dropdown:hover .menu-dropdown__dropbtn {background-color: white;}
-
-// ---------BURGER------------------------
-
-// #sidebar {
-// 	position: fixed;
-// 	width: 250px;
-// 	height: 100%;
-// 	background: #57626f;
-// 	border-right: 4px solid #e0e5ea;
-// 	left: -250px;
-// }
-// #sidebar.active {
-// 	left: 0px;
-// }
-// #sidebar ul, li:first-child {
-// 	text-align: center;
-// 	color: white;
-// 	font-size: 1.92em;
-// 	list-style: none;
-// 	padding: 25px 10px 10px 10px;
-// }
-// #sidebar ul, li:not(:first-child) {
-// 	width: 90%;
-// 	margin-left: 10%;
-// 	font-size: 1.1em;
-// 	list-style: none;
-// 	padding: 15px 10px;
-// }
-// #sidebar ul, li, a {
-// color: #dfe5eb;
-// text-decoration: none;
-
-// }
-// #sidebar ul, li, a:hover {
-// 	color: #8d1b91;
-	
-// }
-// .toggle-btn {
-// 	position: absolute;
-// 	left: 270px;
-// 	top: 20px;
-// 	background-color: #dfe5eb;
-// 	padding: 10px;
-// 	border-radius: 12px;
-// 	cursor: pointer;
-
-// 	span{
-// 		display: block;
-// 		width: 25px;
-// 		height: 4px;
-// 		background-color: #666;
-// 		margin: 4px 0;
-		
-// 	}
-// }
-
-// #sidebar .toggle-btn:hover {
-// 	background-color: #556270;
-// }
-// #sidebar .toggle-btn:hover span {
-// 	background-color: #fafafa;
-// }
 // ------------------------------RECIPES-----------------------------------
-.hd-menu {
-	
-
+.menu__item {
+	&:hover .hd-recipes{
+		display: block;
+	}
+}
+.menu__link {
 	// .hd-menu__recipes
 
 	&__recipes {
-
 	}
 }
+
+
 .hd-recipes {
 	position: absolute;
-	max-width: 320px;
+	left: 0;
+	top: 0;
+	padding: 86px 15px 0 15px;
+	display: none;
+	
 	
 
 	// .hd-recipes__body
 
 	&__body {
+
+		
 	}
 
 	// .hd-recipes__colums
 
 	&__colums {
+
 	}
 
 	// .hd-recipes__colum
 
-	&__colum {
+	&__column {
 	}
 
 	// .hd-recipes__top
@@ -289,27 +257,56 @@
 
 	&__bottom {
 		background: #FFE7DC;
+		padding: 11.67px 20px 21px 20px;
 		border-radius: 0px 0px 20px 20px;
 	}
 
 	// .hd-recipes__author
 
 	&__author {
+	font-family: $fontNorms;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 106%;
+	color: #CA4D70;
+	&:not(:last-child) {
+		margin-top: 12px;
+	}
 	}
 
 	// .hd-recipes__title
 
 	&__title {
+	font-family: $fontTravels;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 115%;
+	color: #8E0038;
+	&:not(:last-child) {
+		margin-bottom: 49px;
+		margin-top: 8px;
+	}
 	}
 
 	// .hd-recipes__details
 
 	&__details {
+		display: flex;
+		
 	}
 
 	// .hd-recipes__time
 
 	&__time {
+	font-family: $fontNorms;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 106%;
+	color: #CA4D70;
+		margin-left: 4px;
 	}
 }
 .hd-main {
@@ -317,6 +314,8 @@
 	// .hd-main__column
 
 	&__column {
+		max-width: 320px;
 		
 	}
 }
+
