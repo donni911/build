@@ -151,6 +151,7 @@ body {
   color: #2A1A1A;
   font-size: 18px;
   font-family: "TTTravels";
+  background: #FCFCFC;
 }
 
 .wrapper {
@@ -168,40 +169,55 @@ body {
 }
 
 .header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 38;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
-.header__container {
+.hd-nav__row {
   display: flex;
   align-items: center;
   min-height: 60px;
-  justify-content: space-between;
-  position: relative;
 }
-.header__menu {
+.nav-menu {
+  flex: 1 1 auto;
+}
+.nav-menu:not(:last-child) {
+  margin-left: 24.65px;
+}
+.nav-menu__list {
   display: flex;
-  align-items: center;
 }
-
-.menu__list {
-  display: flex;
-  justify-content: left;
-}
-.menu__item:not(:last-child) {
+.nav-menu__item:not(:last-child) {
   margin-right: 18px;
 }
-.menu__link {
-  align-items: center;
+.nav-menu__link {
   font-family: "TTNorms";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 162%;
   color: #2A1A1A;
+  padding: 15px 0px 25px 0px;
   transition: all 0.3s ease;
 }
-.menu__link:hover {
+.nav-menu__link:hover {
   color: #8E0038;
 }
-.menu span {
+.nav-left {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav-left > *:not(:last-child) {
+  margin-right: 18px;
+}
+.nav-menu__link-more:hover span {
+  transform: rotate(-135deg);
+}
+.nav-menu__link-more span {
   border: solid black;
   border-width: 0 2px 2px 0px;
   display: inline-block;
@@ -210,105 +226,34 @@ body {
   transition: all 0.3s ease;
   margin-left: 2px;
 }
-.menu .menu__item:hover .additional-menu {
-  display: block;
-}
-.menu .menu__item:hover span {
-  transform: rotate(-135deg);
-}
-.menu .additional-menu {
-  position: absolute;
-  top: 0px;
-  padding-top: 60px;
-  display: none;
-}
-.menu .additional-menu__list {
-  background: #fff;
-  min-width: 156px;
-  padding: 16px 20px 23px 20px;
-  border-radius: 0px 0px 20px 20px;
-  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.06)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
-  z-index: -1;
-}
-.info-header {
-  display: flex;
-}
-.info-header__item {
-  display: flex;
-  align-items: center;
-}
-.info-header__item:not(:last-child) {
-  margin-right: 18px;
-}
-.menu__item:hover .hd-recipes {
-  display: block;
-}
 
-.hd-recipes {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 86px 15px 0 15px;
-  display: none;
-}
-.hd-recipes__top {
+.nav-menu__item {
   position: relative;
 }
-.hd-recipes__day {
+.nav-menu__item:hover > .additional-menu {
+  display: block;
+}
+.additional-menu {
   position: absolute;
-  left: 40px;
-  top: 20px;
-  padding: 8px 20px 12px 20px;
-  border-radius: 20px;
-  background-color: #FF8B3C;
-  color: white;
-  font-family: "TTNorms";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 112%;
-}
-.hd-recipes__bottom {
-  background: #FFE7DC;
-  padding: 11.67px 20px 21px 20px;
+  display: none;
+  left: -20px;
+  top: 44px;
+  padding: 14px 20px 15px 20px;
+  background: #FCFCFC;
   border-radius: 0px 0px 20px 20px;
+  z-index: -10;
+  min-width: 188px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.06)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.04));
 }
-.hd-recipes__author {
-  font-family: "TTNorms";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 106%;
-  color: #CA4D70;
+.additional-menu_less {
+  min-width: 158px;
 }
-.hd-recipes__author:not(:last-child) {
-  margin-top: 12px;
+.additional-menu__link {
+  padding: 0;
+  display: inline-block;
+  line-height: 112%;
+  letter-spacing: -0.01em;
 }
-.hd-recipes__title {
-  font-family: "TTTravels";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 115%;
-  color: #8E0038;
-}
-.hd-recipes__title:not(:last-child) {
-  margin-bottom: 49px;
-  margin-top: 8px;
-}
-.hd-recipes__details {
-  display: flex;
-}
-.hd-recipes__time {
-  font-family: "TTNorms";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 106%;
-  color: #CA4D70;
-  margin-left: 4px;
-}
-
-.hd-main__column {
-  max-width: 320px;
+.additional-menu__link:not(:last-child) {
+  padding-bottom: 20px;
 }

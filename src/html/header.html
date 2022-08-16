@@ -1,86 +1,93 @@
-<header id='header' class="header">
-  <div class="header__container _container">
-      <a href="#" class="header__logo">
+<header class="header">
+	<div class="header__container _container">
+		<nav class="hd-nav__row hd-nav__main">
+			<a href="#" class="hd-nav__logo">
         @@include('../img/header/logo.svg',{})
       </a>
-      
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Рецепти</a>
-            <div class="hd-menu__recipes hd-recipes">
-              <div class="hd-recipes__body">
-                <div class="hd-recipes__colums">
-                  <article class="hd-recipes__column hd-main__column">
-                    <div class="hd-recipes__top">
-                      <a href="#" class="hd-recipes__image">
-                        <img src="../img/header/header-recipes.jpg" alt="recipes">
-                      </a>
-                      <button class="hd-recipes__day">Рецепт дня</button>
-                    </div>
-                    <div class="hd-recipes__bottom">
-                      <a href="#" class="hd-recipes__author">Надія Ковбасенко</a>
-                      <h3 class="hd-recipes__title">Справжній український борщ із шкварками 
-                        та сметанкою <span></span></h3>
-                      <div class="hd-recipes__details">
-                        @@include('../img/header/header-time.svg',{})
-                        <p class="hd-recipes__time">20хв</p>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="menu__item"><a href="#" class="menu__link">Гастро клуб</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Шуба святкує</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Шуба навчає</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Шуба дрінкує</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Хелсі Шуба</a></li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Ще <span></span></a>
-            <div class="hd-menu__additional additional-menu">
-              <ul class="additional-menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Шуба TV</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Експерти смаку</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>      
-      </nav>
-      <div class="header__info info-header">
-        <div class="info-header__item">
-          <a class="info-header__item_language">RU</a>
-        </div>
-        <div class="info-header__item">
-          <a class="info-header__item_search">@@include('../img/header/search.svg',{})</a>
-        </div>
-        <div class="info-header__item">
-          <a class="info-header__item_heart">@@include('../img/header/heart.svg',{})</a>
-        </div>
-        <div class="info-header__item">
-          <a class="info-header__item_user">@@include('../img/header/user.svg',{})</a>
-        </div>
-      </div>
-  </div>
+			<div class="hd-nav__menu nav-menu">
+				<ul class="nav-menu__list">
+					<li class="nav-menu__item nav-menu__item-recipes">
+						<a href="#" class="nav-menu__link">Рецепти</a>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#" class="nav-menu__link">Гастро клуб</a>
+						<div class="additional-menu">
+							<a href="#" class="nav-menu__link additional-menu__link">Шуба TV</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Експерти смаку</a>
+						</div>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#" class="nav-menu__link">Шуба святкує</a>
+						<div class="additional-menu">
+							<a href="#" class="nav-menu__link additional-menu__link">Меню на свята</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Новорічне меню</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Різдвяне меню</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Пасхальне меню</a>
+							<a href="#" class="nav-menu__link additional-menu__link">День народження</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Пікнік/барбекю</a>
+						</div>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#" class="nav-menu__link">Шуба навчає</a>
+						<div class="additional-menu">
+							<a href="#" class="nav-menu__link additional-menu__link">Шуба TV</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Експерти смаку</a>
+						</div>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#" class="nav-menu__link">Шуба дрінкує</a>
+						<div class="additional-menu">
+							<a href="#" class="nav-menu__link additional-menu__link">Шуба TV</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Експерти смаку</a>
+						</div>
+					</li>
+					<li class="nav-menu__item">
+						<a href="#" class="nav-menu__link">Хелсі Шуба</a>
+						<div class="additional-menu">
+							<a href="#" class="nav-menu__link additional-menu__link">Шуба TV</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Експерти смаку</a>
+						</div>
+					</li>
+					<li class="nav-menu__item nav-menu__item-more">
+						<a href="#" class="nav-menu__link nav-menu__link-more">Ще <span></span></a>
+						<div class="additional-menu additional-menu_less">
+							<a href="#" class="nav-menu__link additional-menu__link">Шуба TV</a>
+							<a href="#" class="nav-menu__link additional-menu__link">Експерти смаку</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="hd-nav__menu-left nav-left">
+				<button href="#" class="nav-left__language">RU</button>
+				<div class="nav-left__search">
+					<button  class="nav-left__button-search">
+            		@@include('../img/header/search.svg',{})
+					</button>
+					<div class="nav-left__box-search box-search">
+						<ul class="box-search__list">
+							<li class="box-search__item-often"></li>
+							<li><a href="#" class="box-search__link"></a></li>
+							<li><a href="#" class="box-search__link"></a></li>
+							<li><a href="#" class="box-search__link"></a></li>
+							<li><a href="#" class="box-search__link"></a></li>
+							<li><a href="#" class="box-search__link"></a></li>
+							<li><a href="#" class="box-search__link"></a></li>
+							<li><a href="#" class="box-search__link"></a></li>
+						</ul>
+					</div>
+					
+				</div>
+        		<div class="nav-left__heart">
+					<button class="nav-left__heart-button">
+            		@@include('../img/header/heart.svg',{})
+					</button>
+				</div>
+				<div class="nav-left__avatar">
+					<button class="nav-left__avatar-button">
+            		@@include('../img/header/user.svg',{})
+          		</button>
+				</div>
+			</div>
+		</nav>
+	</div>
 </header>
-<!-- <div id="sidebar">
-  <div class="toggle-btn" onclick="openMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <ul>
-    <li>Menu</li>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Contacts</a></li>
-    <li><a href="#">Phone</a></li>
-    
-  </ul>
-</div> -->
-
-
