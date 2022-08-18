@@ -15,7 +15,7 @@ $maxWidth: 1440;
 //Ширина контейнеру================================
 $maxWidthContainer: 1150;
 //Отступ безпеки
-$containerPadding: 30;
+$containerPadding: 40;	
 //Тип адаптива
 // 1 = отзивчивість(без брайкпоінтов)
 //2 = по брек поінтам
@@ -27,10 +27,10 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 
 
 //Брек-поінти
-$md1: $maxWidthContainer + 12;//PC
-$md2: 991.98px; //Table
-$md3: 767.98px;//Mobile
-$md4: 479.98px;
+$md1: 1080;//PC
+$md2: 991.98; //Table
+$md3: 767.98;//Mobile
+$md4: 479.98;
 
 //Загальні параметри
 body {
@@ -51,4 +51,5 @@ body {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
 	padding: 0px 20px;
+
 }

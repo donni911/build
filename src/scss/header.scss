@@ -5,17 +5,10 @@
 	left: 0;
 	z-index: 38;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-
-	// .header__container
-
 	&__container {
 
-
-		
-
-
 	}
-}
+
 
 .hd-nav {
 	
@@ -77,6 +70,11 @@
 	// .nav-menu__item-recipes
 
 	&__item-recipes {
+			margin-right: 18px;
+			&:hover > .additional-menu {
+				visibility: visible;
+			}
+	
 	}
 
 	// .nav-menu__link
@@ -88,7 +86,7 @@
 		font-size: 16px;
 		line-height: 162%;
 		color: #2A1A1A;
-		padding: 15px 0px 25px 0px;
+		padding: 15px 0px 15px 0px;
 		transition: all 0.3s ease;
 		&:hover {
 			color: #8E0038;
@@ -198,7 +196,8 @@
 	&__item {
 		position: relative;
 		&:hover > .additional-menu {
-			display: block;
+			visibility: visible;
+
 		}
 
 
@@ -230,7 +229,7 @@
 }
 .additional-menu {
 	position: absolute;
-	display: none;
+	visibility: hidden;
 	left: -20px;
 	top: 44px;
 	padding: 14px 20px 15px 20px;
@@ -266,3 +265,249 @@
 			// 	transform: rotate(-135deg);
 			// }
 		
+// ========================DISH=========================
+.additional-menu__section {
+	background: #fcfcfc;
+	border-radius: 0 0 20px 20px;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	z-index: -10;
+}
+.additional-menu {
+	display: block;
+	
+	&__wrapper {
+		display: flex;
+	}
+	// .additional-menu__container
+
+	&__container {
+	}
+
+	// .additional-menu__colums
+
+	&__colums {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	// .additional-menu__column
+
+	&__column {
+		padding-top: 11px;
+	}
+}
+
+}
+.additional-column {
+
+	// .additional-column_big
+
+	&_big {
+		max-width: 320px;
+
+	}
+
+	// .additional-column_bottom
+
+	&_bottom {
+		background: #FFE7DC;
+		border-radius: 0px 0px 20px 20px;
+		padding: 12px 20px 20px 21px;
+	}
+
+	// .additional-column__big-active
+
+	&__big-active {
+		position: relative;
+		padding-top: 9px;
+	}
+
+	// .additional-column__top
+
+	&__top {
+	}
+
+	// .additional-column__image
+
+	&__image img {
+		border-radius: 20px 20px 0 0;
+	}
+
+	// .additional-column__recipe
+
+	&__recipe {
+		position: absolute;
+		top: 28px;
+		left: 40px;
+		font-family: $fontNorms;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 112%;
+		background: #FF8B3C;
+		box-shadow: 0px 4px 8px rgba(142, 0, 56, 0.06), 0px 0px 2px rgba(142, 0, 56, 0.06), 0px 0px 1px rgba(142, 0, 56, 0.04);
+		border-radius: 35px;
+		padding: 8px 20px 8px 20px;
+		color: #FCFCFC;
+		&::before {
+			content: "";
+			position: absolute;
+			inset: 0 0 0 0;
+		}
+	}
+
+	// .additional-column__like
+
+	&__like {
+		position: absolute;
+		top: 187px;
+		left: 248px;
+		padding: 9px 13px;
+		border-radius: 100%;
+		img {
+			border-radius: 100%;
+		}
+
+	}
+
+	// .additional-column__author
+
+	&__author {
+		font-family: $fontNorms;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 106%;
+		color: #CA4D70;
+	}
+
+	// .additional-column__title-dish
+
+	&__title-dish {
+		font-family: $fontTravels;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 115%;
+		color: #8E0038;
+		&:not(:last-child) {
+			margin: 8px 0px 54px 0px;
+		}
+	}
+
+	// .additional-column__time
+
+	&__time {
+		display: flex;
+		align-items: center;
+		font-family: 'TT Norms Pro';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #CA4D70;
+	}
+
+	// .additional-column__time-icon
+
+	&__time-icon {
+	}
+
+	// .additional-column__time-text
+
+	&__time-text {
+	}
+}
+// ---------------------------------------
+	// .additional-column__list
+
+.additional-menu__column {
+
+}
+.additional-column {
+
+
+
+	// .additional-column__list
+
+	&__list {
+		min-width: 160px;
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+	
+
+	// .additional-column__item
+
+	&__item {
+	}
+
+	// .additional-column__title
+
+	&__title {
+		color: #85A9C7;
+		font-family: $fontNorms;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 162%;
+	}
+
+	// .additional-column__link
+
+	&__link {
+		font-family: $fontNorms;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 162%;
+		color: #2A1A1A;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		&:hover {
+			color: #8E0038;
+		}
+	}
+}
+// ---------------------------------------------BURGER-------------------------------
+/*----------Table-------------*/
+/*----------Table-------------*/
+@media (max-width: $md2+px){
+	.hd-burger {
+	
+
+		// .hd-burger__btn
+	
+		&__btn {
+			width: 24px;
+			height: 24px;
+			position: relative;
+			left: 18px;
+			z-index:2;
+			overflow: hidden;
+			span {
+				width: 20px;
+				height: 2px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: #8E0038;
+				transition: all 0.5s;
+				&:nth-of-type(2) {
+					top: calc(50% - 6px);
+				}
+				&:nth-of-type(3) {
+					top: calc(50% + 6px);
+				}
+			}
+		}
+	}
+}
+
+
