@@ -190,6 +190,12 @@ body {
 }
 .header .nav-menu__list {
   display: flex;
+  /*----------Table-------------*/
+}
+@media (max-width: 991.98px) {
+  .header .nav-menu__list {
+    display: none;
+  }
 }
 .header .nav-menu__item:not(:last-child) {
   margin-right: 18px;
@@ -220,6 +226,14 @@ body {
 }
 .header .nav-left > *:not(:last-child) {
   margin-right: 18px;
+}
+.header .nav-left__language {
+  /*----------Table-------------*/
+}
+@media (max-width: 991.98px) {
+  .header .nav-left__language {
+    display: none;
+  }
 }
 .header .nav-menu__link-more:hover span {
   transform: rotate(-135deg);
@@ -388,31 +402,69 @@ body {
   color: #8E0038;
 }
 
-/*----------Table-------------*/
-/*----------Table-------------*/
-@media (max-width: 991.98px) {
-  .hd-burger__btn {
-    width: 24px;
-    height: 24px;
-    position: relative;
-    left: 18px;
-    z-index: 2;
-    overflow: hidden;
-  }
-  .hd-burger__btn span {
-    width: 20px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #8E0038;
-    transition: all 0.5s;
-  }
-  .hd-burger__btn span:nth-of-type(2) {
-    top: calc(50% - 6px);
-  }
-  .hd-burger__btn span:nth-of-type(3) {
-    top: calc(50% + 6px);
-  }
+.header-burger {
+  min-width: 320px;
+  height: 100%;
+  background: #FCFCFC;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 18px 28px 0px 28px;
+  visibility: visible;
 }
+
+.hd-burger {
+  cursor: pointer;
+}
+.hd-burger__top {
+  position: relative;
+  padding: 23px 0px 61px 0px;
+}
+.hd-burger__top span::after, .hd-burger__top span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background: #8E0038;
+}
+.hd-burger__top span::before {
+  transform: rotate(45deg);
+}
+.hd-burger__top span::after {
+  transform: rotate(-45deg);
+}
+.hd-burger__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hd-burger__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+.hd-burger__item span {
+  border: solid black;
+  border-width: 0 2px 2px 0px;
+  display: inline-block;
+  padding: 3.5px 3.5px 7px 7px;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+.hd-burger__item span:hover {
+  border: solid #8E0038;
+  border-width: 0 2px 2px 0px;
+}
+.hd-burger__btn {
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 114%;
+}
+.hd-burger__btn:hover {
+  color: #8E0038;
+}
+/*----------Table-------------*/
+/*----------Table-------------*/

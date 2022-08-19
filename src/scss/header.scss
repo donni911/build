@@ -55,6 +55,11 @@
 
 	&__list {
 		display: flex;
+		/*----------Table-------------*/
+		@media (max-width: $md2+px){
+			display: none;
+
+		}
 		
 
 	}
@@ -116,6 +121,10 @@
 	// .nav-left__language
 
 	&__language {
+		/*----------Table-------------*/
+		@media (max-width: $md2+px){
+			display: none;
+		}
 	}
 
 	// .nav-left__search
@@ -475,39 +484,103 @@
 	}
 }
 // ---------------------------------------------BURGER-------------------------------
-/*----------Table-------------*/
-/*----------Table-------------*/
-@media (max-width: $md2+px){
-	.hd-burger {
-	
+.header-burger {
+	min-width: 320px;
+	height: 100%;
+	background: #FCFCFC;
+	z-index: 50;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 18px 28px 0px 28px;
+	visibility: visible;
+}
+.hd-burger {
+	cursor: pointer;
 
-		// .hd-burger__btn
-	
-		&__btn {
-			width: 24px;
-			height: 24px;
-			position: relative;
-			left: 18px;
-			z-index:2;
-			overflow: hidden;
-			span {
-				width: 20px;
-				height: 2px;
+		// .hd-burger__top
+
+	&__top {
+		position: relative;
+		padding: 23px 0px 61px 0px;
+		span {
+			&::after, 
+			&::before {
+				content: "";
 				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				background-color: #8E0038;
-				transition: all 0.5s;
-				&:nth-of-type(2) {
-					top: calc(50% - 6px);
-				}
-				&:nth-of-type(3) {
-					top: calc(50% + 6px);
-				}
+				right: 0;
+				width: 24px;
+				height: 2px;
+				background: #8E0038;
+			}
+			&::before {
+				transform: rotate(45deg);
+			}
+			&::after {
+				transform: rotate(-45deg);
 			}
 		}
 	}
+
+		// .hd-burger__top-button
+
+	&__top-button {
+	}
+
+		// .hd-burger__nav
+
+	&__nav {
+	}
+
+		// .hd-burger__list
+
+	&__list {
+	}
+
+		// .hd-burger__item
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 28px;
+		}
+		span {
+			border: solid black;
+			border-width: 0 2px 2px 0px;
+			display: inline-block;
+			padding: 3.5px 3.5px 7px 7px;
+			transform: rotate(-45deg);
+			transition: all 0.2s ease;
+			margin-right: 8px;
+			&:hover {
+				border: solid #8E0038;
+				border-width: 0 2px 2px 0px;
+			}
+				
+		}
+	}
+		// .hd-burger__btn
+
+	&__btn {
+		font-family: $fontNorms;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 114%;
+		&:hover {
+			color: #8E0038;
+		}
+	}
+
+		// .hd-burger__next
+
+	&__next {
+	}
 }
+
+/*----------Table-------------*/
+/*----------Table-------------*/
 
 
