@@ -1,9 +1,11 @@
+/*-----------Menu------------------------*/
 .header{
     position:fixed;
     width:100%;
     top:0px;
     left:0px;
     z-index:50;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
     &__container{ 
         display:flex;
         justify-content: space-between;
@@ -11,27 +13,19 @@
         padding: 0px 36px;
     }
 }
+/*-----------обмежуючий контейнер------------------------*/
 ._container{
-    max-width:1110px;
+    max-width:1150px;
     min-height: 60px;
     margin:0px auto;
-}
-.button{
-    background-color: white;
-    color: #85A9C7;
-    font-family: 'TT Norms Pro';
-    font-weight: 400px;
-    font-size: 16px;
-    line-height: 18px;
-    font-style: normal;
-    margin-right: 18px;
+    padding: 0 20px;
 }
 .menu{
     display:flex;
     align-items: center;
     &_ul{
         margin: 0;
-        display:flex;
+        display:flex; 
     }
     &_list {
         &:not(:last-child){
@@ -42,80 +36,287 @@
         }
     }
     &_link{
-        font-family: 'TT Norms Pro';
+        font-family: $fontNorms;
         font-size:16px;
         text-align: left;
         font-weight: 400;
         text-decoration: none;
         color: #2A1A1A;
         line-height: 162%;
+        &:hover{color:$burgundy}
+        transition: all 0.3s ease 0s;
+        padding: 15px 0;
     }   
-    
 }   
-
- 
-/* dropdpwn menu*/
-.dropbtn{
-    background-color: #FCFCFC;
-    margin-left:2px;
-    align-items: center;
-       
+/*-----------Header Icons------------------------*/
+.button{
+    background-color: $white;
+    color: #85A9C7;
+    font-family: 'TT Norms Pro';
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 18px;
+    font-style: normal;
+    margin-right: 18px;
 }
-.dropdown{
-    position:relative;
-    display:inline-block;
-}
-.dropdown-content {
-  a {
-    color: #FCFCFC;
-    text-decoration: none;
-    display: block;
-    padding: 5px 20px;
-    line-height: 26px;
-    }
-}
-.dropdown-content{
-    display:none;
-    position:absolute;
-    top:24px;
-    left:-50px;
-    background-color:#FCFCFC; 
-    min-width: 158px;
-    min-height: 84px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    border-radius: 0px 0px 20px 20px;
-    z-index: 1;
-    padding: 14px 0px 25px 0px;
-}
-.dropdown-content a:hover {color:#8E0038;}
-.dropdown:hover .dropdown-content {display: block;}
-.menu-link__main:hover .dropdown-content{display: block;}
-
 .header {
     // .header_icons
     &_icons {
         margin:0;
-        display: flex;
+        display:flex;
     }
     // .header_icon
     &_icon {
         &:not(:last-child){
             margin-right: 18px;
         } 
-
     }
 }
 .header-icon {
     // .header-icon__button
     &__button {
-        background-color: #FCFCFC;
+        background-color: $white;
         color:#85A9C7;
         font-size:16px;
-        font-family:'TT Norms Pro';
+        font-family:"TT Norms Pro";
         font-weight:400px;
         line-height: 18px;
     }
     // .header-icon__link
     &__link {
+        background-color: $white;
+    }    
+}   
+/*---------------Випадаюче меню------------*/
+.sub-menu {
+    position:relative;
+    width:100%;
+    top:0px;
+    left:0px;
+
+    // .sub-menu_link
+    &_link {
+        
+        display: inline-block;
+        font-family: $fontNorms;
+        font-style: normal;
+        font-size:16px;
+        font-weight: 400;
+        color: #2A1A1A;
+        line-height: 112%;
+        letter-spacing: -0.01em;
+        transition: all 0.3s ease 0s;
+        &:hover{color:$burgundy}
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+    }
+    // .sub-menu__dropbtn
+    &__dropbtn {
+        background-color: $white;
+        margin-left:2px;
+    }
+    // .sub-menu__content
+    &__content {
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        visibility:hidden;
+        top: 44px;
+        left:-20px;
+        min-width: 174px;
+        padding:13px 20px 19px 20px;
+        background-color: $white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+        border-radius: 0px 0px 20px 20px;
+        transition: all 0.1s ease;
     }
 }
+.sub-menu__content_small {
+    min-width: 158px;
+}
+.sub-menu:hover > .sub-menu__content {
+    visibility: visible;
+}
+.sub-menu__recipes:hover > .sub-menu__block {
+    visibility:visible;
+}
+// ---------------------------RECIPE------------------------------------------------
+.sub-menu {
+    // .sub-menu__block (загальний блок випадаючого меню рецепти)
+    &__block {
+        visibility: hidden;
+        background-color: $white;
+        border-radius: 0 0 20px 20px;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+    // .sub-menu__container
+    &_container {   
+    }
+
+    // .sub-menu__items
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding-top:25px;
+    }
+
+    // .sub-menu__cols      
+    &__cols {
+        display: block;
+        max-width:160px;
+    }
+
+    // .sub-menu__item
+    &__item {
+        &_wrapper {
+            display: flex;
+        }
+    }
+
+    // .sub-menu__item-article
+    &__item-article {
+        max-width: 320px;
+    }
+
+     // .sub-menu__item-list
+     &__item-list {
+        min-width: 160px;
+        &:not(:last-child){
+            margin-right:30px;
+        }  
+    }
+    // .sub-menu__column
+    &__column {
+    }
+}
+//-------------------- Column recipe of the day--------------------------------------//
+.article-column {
+    width: 320px;
+    height: 400px;
+    
+    // .article-column__top
+    &__top {
+        position: relative;
+        width: 320px;
+        height: 213.33px;
+        img{
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+    // .article-column__like
+    &__like {
+        position: absolute;
+        top: 187.07px;
+        left: 248px;
+        padding: 10px 10px;
+        border-radius: 100%;
+        z-index: 2;
+    }
+
+    // .article-column__bottom
+    &__bottom {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 12px 20px 21px 20px;
+        width: 320px;
+        height: 187px;
+        background: #FFE7DC;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    // .article-column__autor
+    &__autor {
+        padding-bottom: 9px;
+        font-family: $fontNorms;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color:$pink;
+    }
+    
+    // .article-column__title
+
+    &__title {
+    padding-bottom:48px;
+    font-family: $fontTravels;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 115%;
+    color:$burgundy;        
+    }
+
+    // .article-column__time
+    &__time {
+        display: flex;
+        align-items: center;
+        p{
+            font-family: $fontNorms;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            padding-left: 4px;
+            color:$pink;
+        }
+
+    }
+}
+// menu_recipes (за кухнями....)
+.recipes-column {
+    // .recipes-column__p
+		&__p {
+            color:$gray;
+            font-family: $fontNorms;
+            font-style: normal;
+            font-size:16px;
+            font-weight: 400;
+            line-height: 162%;
+		}
+
+    // .recipes-column__list
+    &__list {
+ 
+        &:last-child{
+            margin:0px;
+        }
+    }
+
+    // .recipes-column__link
+    &__link {
+        font-family: $fontNorms;
+        font-style: normal;
+        font-size:16px;
+        font-weight: 400;
+        color: #2A1A1A;
+        line-height: 162%;
+        &:hover{color:$burgundy}
+        transition: all 0.3s ease 0s; 
+    }
+}
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+

@@ -42,7 +42,7 @@ function watcher() {
 export { svgSprive }
 
 const fonts = gulp.series(otfToTtf, ttfTowoff, fontsStyle);
-const mainTasks = gulp.series( gulp.parallel(copy, html, scss, js, images))
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
 // const mainTasks = gulp.series( gulp.parallel(copy, html, scss,  images))
 // постройка сценаріїв якшо змінюються файли
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

@@ -4,71 +4,164 @@
     <nav class="menu">
       <ul class="menu_ul">
           <li class="menu_list">
-            <a href="#" class="menu_link">Рецепти</a>
-          </li>
-          <li class="menu_list">
-            <a href="#"class="menu_link">Гастро клуб</a>
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <a href="#" class="menu_link">Фуд експерти</a>
-                <a href="#" class="menu_link">Книги, фільми, серіали про їжу</a>
-                <a href="#" class="menu_link">Food story</a>
-                <a href="#" class="menu_link">Гастромандри</a>
-              </div>
-            </div> 
-          </li>
-          <li class="menu_list">
-            <a href="#" class="menu_link">Шуба святкує</a>
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <a href="#" class="menu_link">Великоднє меню</a>
-                <a href="#" class="menu_link">Різдвяне меню</a>
-                <a href="#" class="menu_link">Меню на свята</a>
-                <a href="#" class="menu_link">День народження</a>
-                <a href="#" class="menu_link">Новорічне меню</a>
-                <a href="#" class="menu_link">Пікнік/барбекю</a>
-              </div>
-            </div> 
-          </li>
-          <li class="menu_list">
-            <a href="#" class="menu_link">Шуба навчає </a>
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <a href="#" class="menu_link">Хау ту</a>
-                <a href="#" class="menu_link">Зберігання, організація</a>
-                <a href="#" class="menu_link">Гастролікбез</a>
-              </div>
-            </div> menu-link__main
-          </li>
-          <li class="menu_list">
-            <div class="dropdown">
-            <a href="#" class="menu_link menu-link__main">Шуба дрінкує</a>
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <a href="#" class="menu_link">Коктейлі</a>
-                <a href="#" class="menu_link">Напої</a>
-              </div>
-            </div>  
-          </li>
-          <li class="menu_list">
-            <a href="#" class="menu_link menu-link__main">Хелсі Шуба</a>
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <a href="#" class="menu_link">Правильне харчування</a>
-                <a href="#" class="menu_link">Меню та рецепти</a>
-                <a href="#" class="menu_link">Суперфуди</a>
+            <div class="sub-menu__recipes">
+              <a href="#" class="menu_link">Рецепти</a>
+              <div class="sub-menu__block">
+                <div class="sub-menu__container _container">
+                  <div class="sub-menu__items">
+                    <div class="sub-menu__item sub-menu__item-article">
+                      <article class="sub-menu__column article-column">
+                        <div class="article-column__top">
+                            <img src="../img/recipes/main-dish.jpg" alt="borsch">
+                            <div class="badg__active">
+                              <span class="badg__recipes">Рецепт дня</span>
+                            </div>
+                          <button class="article-column__like">@@include('../img/heart.svg',{})</button>
+                        </div>
+                        <div class="article-column__bottom">
+                          <a href="#" class="article-column__autor"> Надія Ковбасенко</a>
+                          <a href="#" class="article-column__title">Справжній український  борщ із шкварками та сметаною</a>
+                          <a href="#" class="article-column__time">
+                            @@include('../img/clock.svg',{}) 
+                            <p class="">20 хв</p>
+                          </a>               
+                        </div>
+                      </article>
+                    </div>
+                    <div class="sub-menu__item_wrapper">
+                      <div class="sub-menu__cols sub-menu__item-list">
+                        <ul>
+                          <li class="sub-menu__item recipes-column__list"><p class="recipes-column__p">За кухнями</p></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Європейська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Азійська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Африканська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Глобальна</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Українська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Італійська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Французька</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Грузинська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Польська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Британська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Мексиканська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Іспанська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Китайська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Японська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Тайська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Індійська</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Грецька</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Німецька</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-menu__cols sub-menu__item-list">
+                        <ul>
+                          <li class="sub-menu__item recipes-column__list"><p class="recipes-column__p">За стравою</p></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Сніданок</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Обід</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Вечеря</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Десерт</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Випічка</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Закуски</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Гарніри</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Основні страви</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Перші страви</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Салати</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Соуси та маринади</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Заготовки та косервація</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-menu__cols sub-menu__item-list">
+                        <ul>
+                          <li class="sub-menu__item recipes-column__list"><p class="recipes-column__p">За дієтою</p></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Без глютену</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Без лактози</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Вегетаріанські рецепти</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Веганські рецепти</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Хелсі</a></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Для дітей</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-menu__cols sub-menu__item-list">
+                        <ul>
+                          <li class="sub-menu__item recipes-column__list"><p class="recipes-column__p">За швидкістю</p></li>
+                          <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">До 30 хвилин</a></li>
+                        </ul>
+                          <ul>
+                            <li class="sub-menu__item recipes-column__list"><p class="recipes-column__p">За сезонами</p></li>
+                            <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Літні страви</a></li>
+                            <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Осінні страви</a></li>
+                            <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Зимові страви</a></li>
+                            <li class="sub-menu__item recipes-column__list"><a href="" class="recipes-column__link">Весняні страви</a></li>
+                          </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
             </div>
           </li>
           <li class="menu_list">
-            <a href="#" class="menu_link">Ще
-            <div class="dropdown">
-              <a class="dropbtn"> @@include('../img/arrow.svg',{})</a>
-              <div class="dropdown-content">
-                <a href="#" class="menu_link">Шуба TV</a>
-                <a href="#" class="menu_link">Експерти смаку</a>
+            <div class="sub-menu">
+            <a href="#"class="menu_link">Гастро клуб</a>
+              <div class="sub-menu__content">
+                <a href="#" class="sub-menu_link">Фуд експерти</a>
+                <a href="#" class="sub-menu_link">Книги, фільми, серіали про їжу</a>
+                <a href="#" class="sub-menu_link">Food story</a>
+                <a href="#" class="sub-menu_link">Гастромандри</a>
               </div>
-            </div>  
+            </div> 
+          </li>
+          <li class="menu_list">
+            <div class="sub-menu">
+            <a href="#" class="menu_link">Шуба святкує</a>
+              <div class="sub-menu__content">
+                <a href="#" class="sub-menu_link">Великоднє меню</a>
+                <a href="#" class="sub-menu_link">Різдвяне меню</a>
+                <a href="#" class="sub-menu_link">Меню на свята</a>
+                <a href="#" class="sub-menu_link">День народження</a>
+                <a href="#" class="sub-menu_link">Новорічне меню</a>
+                <a href="#" class="sub-menu_link">Пікнік/барбекю</a>
+              </div>
+            </div> 
+          </li>
+          <li class="menu_list">
+            <div class="sub-menu">
+              <a href="#" class="menu_link">Шуба навчає </a>
+              <div class="sub-menu__content">
+                <a href="#" class="sub-menu_link">Хау ту</a>
+                <a href="#" class="sub-menu_link">Зберігання, організація</a>
+                <a href="#" class="sub-menu_link">Гастролікбез</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu_list">
+            <div class="sub-menu">
+              <a href="#" class="menu_link">Шуба дрінкує</a>            
+              <div class="sub-menu__content">
+                <a href="#" class="sub-menu_link">Коктейлі</a>
+                <a href="#" class="sub-menu_link">Напої</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu_list">
+            <div class="sub-menu">
+              <a href="#" class="menu_link">Хелсі Шуба</a>
+              <div class="sub-menu__content">
+                <a href="#" class="sub-menu_link">Правильне харчування</a>
+                <a href="#" class="sub-menu_link">Меню та рецепти</a>
+                <a href="#" class="sub-menu_link">Суперфуди</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu_list">
+            <div class="sub-menu">
+              <a href="#" class="menu_link">Ще
+              <a class="sub-menu__dropbtn"> @@include('../img/arrow.svg',{})</a>
+              <div class="sub-menu__content sub-menu__content_small">
+                <a href="#" class="sub-menu_link">Шуба TV</a>
+                <a href="#" class="sub-menu_link">Експерти смаку</a>
+              </div>
+            </div>
           </li>       
         </ul>  
     </nav>
@@ -77,13 +170,13 @@
         <button class="header-icon__button">RU</button>
       </div>
       <div class="header_icon header-icon">
-        <a href="#" class="header-icon__link">@@include('../img/search.svg',{})</a>
+        <button href="#" class="header-icon__link">@@include('../img/search.svg',{})</button>
       </div>
       <div class="header_icon header-icon">
-        <a href="#" class="header-icon__link">@@include('../img/heart.svg',{})</a>
+        <button href="#" class="header-icon__link">@@include('../img/heart.svg',{})</button>
       </div>
       <div class="header_icons header-icon">
-        <a href="#" class="header-icon__link"> @@include('../img/user.svg',{})</a>
+        <button href="#" class="header-icon__link"> @@include('../img/user.svg',{})</button>
       </div>
     </div>
   </div>  

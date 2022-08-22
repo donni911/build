@@ -1,43 +1,51 @@
+@charset "UTF-8";
 @font-face {
-  font-family: TT Norms Pro;
-  font-weight: 500;
-  src: url("/src/fonts/TT Norms Pro Medium.woff") format("woff"), url("/src/fonts/TT Norms Pro Medium.woff2") format("woff2");
+  font-family: TTNorms;
   font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: TT Travels;
+  src: url("../fonts/TTNorms-Bold.woff2") format("woff2"), url("../fonts/TTNorms-Bold.woff") format("woff");
   font-weight: 700;
-  src: url("/src/fonts/tt-travels-bold.woff") format("woff"), url("/src/fonts/tt-travels-bold.woff2") format("woff2");
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: TT Travels;
-  font-weight: 600;
-  src: url("/src/fonts/tt-travels-demibold.woff") format("woff"), url("/src/fonts/tt-travels-demibold.woff2") format("woff2");
+  font-family: TTNorms;
   font-display: swap;
+  src: url("../fonts/TTNorms-ExtraLight.woff2") format("woff2"), url("../fonts/TTNorms-ExtraLight.woff") format("woff");
+  font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: TT Norms Pro;
+  font-family: Play;
+  font-display: swap;
+  src: url("../fonts/Play-Bold.woff2") format("woff2"), url("../fonts/Play-Bold.woff") format("woff");
   font-weight: 700;
-  src: url("/src/fonts/TT Norms Pro Bold.woff") format("woff"), url("/src/fonts/TT Norms Pro Bold.woff2") format("woff2");
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: DM Sans;
+  font-family: TTNorms;
+  font-display: swap;
+  src: url("../fonts/TTNorms-Medium.woff2") format("woff2"), url("../fonts/TTNorms-Medium.woff") format("woff");
   font-weight: 500;
-  src: url("/src/fonts/dm-sans-regular.woff") format("woff"), url("/src/fonts/dm-sans-regular.woff2") format("woff2");
-  font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: Jeko;
-  font-weight: 600;
-  src: url("/src/fonts/FontsFree-Net-Jeko-Bold.woff") format("woff"), url("/src/fonts/FontsFree-Net-Jeko-Bold.woff2") format("woff2");
+  font-family: TTTravels;
   font-display: swap;
+  src: url("../fonts/TTTravels-Bold.woff2") format("woff2"), url("../fonts/TTTravels-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Uni Sans Heavy;
+  font-display: swap;
+  src: url("../fonts/Uni Sans Heavy.woff2") format("woff2"), url("../fonts/Uni Sans Heavy.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: TTTravels;
+  font-display: swap;
+  src: url("../fonts/TTTravels-DemiBold.woff2") format("woff2"), url("../fonts/TTTravels-DemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 * {
@@ -138,12 +146,14 @@ h6 {
 }
 
 /*--------------------*/
+/*-----------Menu------------------------*/
 .header {
   position: fixed;
   width: 100%;
   top: 0px;
   left: 0px;
   z-index: 50;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
 .header__container {
   display: flex;
@@ -152,21 +162,12 @@ h6 {
   padding: 0px 36px;
 }
 
+/*-----------обмежуючий контейнер------------------------*/
 ._container {
-  max-width: 1110px;
+  max-width: 1150px;
   min-height: 60px;
   margin: 0px auto;
-}
-
-.button {
-  background-color: white;
-  color: #85A9C7;
-  font-family: "TT Norms Pro";
-  font-weight: 400px;
-  font-size: 16px;
-  line-height: 18px;
-  font-style: normal;
-  margin-right: 18px;
+  padding: 0 20px;
 }
 
 .menu {
@@ -184,59 +185,30 @@ h6 {
   margin: 0px;
 }
 .menu_link {
-  font-family: "TT Norms Pro";
+  font-family: "TTNorms";
   font-size: 16px;
   text-align: left;
   font-weight: 400;
   text-decoration: none;
   color: #2A1A1A;
   line-height: 162%;
+  transition: all 0.3s ease 0s;
+  padding: 15px 0;
 }
-
-/* dropdpwn menu*/
-.dropbtn {
-  background-color: #FCFCFC;
-  margin-left: 2px;
-  align-items: center;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content a {
-  color: #FCFCFC;
-  text-decoration: none;
-  display: block;
-  padding: 5px 20px;
-  line-height: 26px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 24px;
-  left: -50px;
-  background-color: #FCFCFC;
-  min-width: 158px;
-  min-height: 84px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-  border-radius: 0px 0px 20px 20px;
-  z-index: 1;
-  padding: 14px 0px 25px 0px;
-}
-
-.dropdown-content a:hover {
+.menu_link:hover {
   color: #8E0038;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.menu-link__main:hover .dropdown-content {
-  display: block;
+/*-----------Header Icons------------------------*/
+.button {
+  background-color: #FCFCFC;
+  color: #85A9C7;
+  font-family: "TT Norms Pro";
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  margin-right: 18px;
 }
 
 .header_icons {
@@ -255,6 +227,183 @@ h6 {
   font-weight: 400px;
   line-height: 18px;
 }
+.header-icon__link {
+  background-color: #FCFCFC;
+}
+
+/*---------------Випадаюче меню------------*/
+.sub-menu {
+  position: relative;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+.sub-menu_link {
+  display: inline-block;
+  font-family: "TTNorms";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2A1A1A;
+  line-height: 112%;
+  letter-spacing: -0.01em;
+  transition: all 0.3s ease 0s;
+}
+.sub-menu_link:hover {
+  color: #8E0038;
+}
+.sub-menu_link:not(:last-child) {
+  padding-bottom: 20px;
+}
+.sub-menu__dropbtn {
+  background-color: #FCFCFC;
+  margin-left: 2px;
+}
+.sub-menu__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  top: 44px;
+  left: -20px;
+  min-width: 174px;
+  padding: 13px 20px 19px 20px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0px 0px 20px 20px;
+  transition: all 0.1s ease;
+}
+
+.sub-menu__content_small {
+  min-width: 158px;
+}
+
+.sub-menu:hover > .sub-menu__content {
+  visibility: visible;
+}
+
+.sub-menu__recipes:hover > .sub-menu__block {
+  visibility: visible;
+}
+
+.sub-menu__block {
+  visibility: hidden;
+  background-color: #FCFCFC;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+.sub-menu__items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.sub-menu__cols {
+  display: block;
+  max-width: 160px;
+}
+.sub-menu__item_wrapper {
+  display: flex;
+}
+.sub-menu__item-article {
+  max-width: 320px;
+}
+.sub-menu__item-list {
+  min-width: 160px;
+}
+.sub-menu__item-list:not(:last-child) {
+  margin-right: 30px;
+}
+.article-column {
+  width: 320px;
+  height: 400px;
+}
+.article-column__top {
+  position: relative;
+  width: 320px;
+  height: 213.33px;
+}
+.article-column__top img {
+  border-radius: 20px 20px 0px 0px;
+}
+.article-column__like {
+  position: absolute;
+  top: 187.07px;
+  left: 248px;
+  padding: 10px 10px;
+  border-radius: 100%;
+  z-index: 2;
+}
+.article-column__bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 20px 21px 20px;
+  width: 320px;
+  height: 187px;
+  background: #FFE7DC;
+  border-radius: 0px 0px 20px 20px;
+}
+.article-column__autor {
+  padding-bottom: 9px;
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #CA4D70;
+}
+.article-column__title {
+  padding-bottom: 48px;
+  font-family: "TTTravels", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 115%;
+  color: #8E0038;
+}
+.article-column__time {
+  display: flex;
+  align-items: center;
+}
+.article-column__time p {
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 4px;
+  color: #CA4D70;
+}
+
+.recipes-column__p {
+  color: #85A9C7;
+  font-family: "TTNorms";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 162%;
+}
+.recipes-column__list:last-child {
+  margin: 0px;
+}
+.recipes-column__link {
+  font-family: "TTNorms";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2A1A1A;
+  line-height: 162%;
+  transition: all 0.3s ease 0s;
+}
+.recipes-column__link:hover {
+  color: #8E0038;
+}
+
 .footer {
   margin-top: 150px;
   background-color: #FFE7DC;
