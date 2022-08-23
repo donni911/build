@@ -181,8 +181,10 @@ h6 {
 .menu_list:not(:last-child) {
   margin-right: 18px;
 }
-.menu_list:last-child {
-  margin: 0px;
+@media (max-width: 1080px) {
+  .menu_list:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .menu_link {
   font-family: "TTNorms";
@@ -217,6 +219,11 @@ h6 {
 }
 .header_icon:not(:last-child) {
   margin-right: 18px;
+}
+@media (max-width: 1080px) {
+  .header_icon:not(:last-child):not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .header-icon__button {
@@ -338,6 +345,32 @@ h6 {
   border-radius: 100%;
   z-index: 2;
 }
+.article-column .badg {
+  display: flex;
+  flex-direction: row;
+  top: 0px;
+  left: 0px;
+}
+.article-column .badg__active {
+  position: relative;
+  width: 124px;
+  height: 38px;
+  margin: 10px;
+  background-color: #FF8B3C;
+  box-shadow: 0px 4px 8px rgba(142, 0, 56, 0.06), 0px 0px 2px rgba(142, 0, 56, 0.06), 0px 0px 1px rgba(142, 0, 56, 0.04);
+  border-radius: 35px;
+  z-index: 1;
+}
+.article-column .badg__recipes {
+  width: 84px;
+  height: 18px;
+  font-family: "TT Norms Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FCFCFC;
+}
 .article-column__bottom {
   position: relative;
   display: flex;
@@ -404,6 +437,54 @@ h6 {
   color: #8E0038;
 }
 
+.burger-menu {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.burger-menu span {
+  width: 20px;
+  height: 2px;
+  background-color: #8E0038;
+  border-radius: 1.8px;
+  position: absolute;
+}
+.burger-menu span::after, .burger-menu span::before {
+  content: "";
+  width: 20px;
+  height: 1.8px;
+  border-radius: 1.8px;
+  background-color: #8E0038;
+}
+.burger-menu span::after {
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.burger-menu span::before {
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+@media (max-width: 991.98px) {
+  .burger-menu {
+    opacity: 1;
+  }
+
+  .header-icon__button {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
 .footer {
   margin-top: 150px;
   background-color: #FFE7DC;

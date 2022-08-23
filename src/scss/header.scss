@@ -30,11 +30,17 @@
     &_list {
         &:not(:last-child){
             margin-right: 18px;
-        } 
-        &:last-child{
-            margin:0px;
+   
         }
     }
+    @media (max-width:1080px){
+        &_list {
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+
+    }  
     &_link{
         font-family: $fontNorms;
         font-size:16px;
@@ -69,7 +75,13 @@
     &_icon {
         &:not(:last-child){
             margin-right: 18px;
+            @media (max-width:1080px){
+                &:not(:last-child){
+                    margin-right: 10px;
+                } 
+            }
         } 
+    
     }
 }
 .header-icon {
@@ -221,6 +233,46 @@
         border-radius: 100%;
         z-index: 2;
     }
+    .badg {
+        display: flex;
+        flex-direction: row;
+        top:0px;
+        left:0px;
+       
+    
+       
+        
+		// .badg__active
+
+		&__active {
+            position: relative;
+            width: 124px;
+            height: 38px;
+            
+            margin:10px;
+            background-color: $orange;
+            box-shadow: 0px 4px 8px rgba(142, 0, 56, 0.06), 0px 0px 2px rgba(142, 0, 56, 0.06), 0px 0px 1px rgba(142, 0, 56, 0.04);
+            border-radius: 35px;  
+            z-index: 1;
+            
+        
+		}
+
+		// .badg__recipes
+
+		&__recipes { 
+            width: 84px;
+            height: 18px;
+            font-family: 'TT Norms Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #FCFCFC;
+            
+		}
+}
+
 
     // .article-column__bottom
     &__bottom {
@@ -305,6 +357,63 @@
         transition: all 0.3s ease 0s; 
     }
 }
+//-------------------------BURGER MENU--------------------------//
+
+.burger-menu {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    span {
+        width: 20px;
+        height: 2px;
+        background-color: #8E0038;
+        border-radius: 1.8px;
+        position: absolute;
+        &::after,
+        &::before {
+            content: "";
+            width: 20px;
+            height: 1.8px;
+            border-radius: 1.8px;
+            background-color: #8E0038;
+        }
+        &::after {
+            position: absolute;
+            top: 6px;
+            left: 0;
+        }
+        &::before {
+            position: absolute;
+            top: -6px;
+            left: 0;
+        }
+    }
+}
+
+@media (max-width:991.98px){
+    .burger-menu{
+       opacity: 1;
+    }
+    .header-icon {
+		&__button {
+            display: none;
+		}
+    }
+    .menu{
+        display: none;
+    }
+}
+
+
+
+
+
+
 
 
 
