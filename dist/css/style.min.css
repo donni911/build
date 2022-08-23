@@ -170,7 +170,7 @@ body {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -285,9 +285,8 @@ body {
   top: 100%;
   left: 0;
   z-index: -10;
-}
-.header .additional-menu {
-  display: block;
+  padding: 0;
+  visibility: visible;
 }
 .header .additional-menu__wrapper {
   display: flex;
@@ -297,7 +296,7 @@ body {
   justify-content: space-between;
 }
 .header .additional-menu__column {
-  padding-top: 11px;
+  padding-top: 25px;
 }
 
 .additional-column_big {
@@ -310,7 +309,7 @@ body {
 }
 .additional-column__big-active {
   position: relative;
-  padding-top: 9px;
+  padding-top: 11px;
 }
 .additional-column__image img {
   border-radius: 20px 20px 0 0;
@@ -409,7 +408,7 @@ body {
   z-index: 50;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0px;
   padding: 18px 28px 0px 28px;
   visibility: visible;
 }
@@ -417,22 +416,69 @@ body {
 .hd-burger {
   cursor: pointer;
 }
-.hd-burger__top {
+.hd-burger__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 23px 0px 61px 0px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  cursor: pointer;
+  visibility: hidden;
 }
-.hd-burger__top span::after, .hd-burger__top span::before {
-  content: "";
+@media (max-width: 991.98px) {
+  .hd-burger__button {
+    visibility: visible;
+  }
+}
+.hd-burger__button span {
+  height: 1.8px;
+  width: 20px;
+  background-color: #8E0038;
+  border-radius: 50%;
   position: absolute;
-  right: 0;
+}
+.hd-burger__button span::after, .hd-burger__button span::before {
+  content: "";
+  width: 20px;
+  height: 1.8px;
+  background: #8E0038;
+}
+.hd-burger__button span::before {
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+.hd-burger__button span::after {
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.hd-burger__top {
+  width: 100%;
+  height: 24px;
+  position: relative;
+}
+.hd-burger__top span {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+.hd-burger__top::after, .hd-burger__top::before {
+  content: "";
   width: 24px;
   height: 2px;
   background: #8E0038;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.hd-burger__top span::before {
+.hd-burger__top::before {
   transform: rotate(45deg);
 }
-.hd-burger__top span::after {
+.hd-burger__top::after {
   transform: rotate(-45deg);
 }
 .hd-burger__item {
