@@ -51,7 +51,7 @@
         line-height: 162%;
         &:hover{color:$burgundy}
         transition: all 0.3s ease 0s;
-        padding: 15px 0;
+        padding: 25px 0;
     }   
 }   
 /*-----------Header Icons------------------------*/
@@ -108,7 +108,6 @@
 
     // .sub-menu_link
     &_link {
-        
         display: inline-block;
         font-family: $fontNorms;
         font-style: normal;
@@ -141,13 +140,16 @@
         background-color: $white;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
         border-radius: 0px 0px 20px 20px;
-        transition: all 0.1s ease;
+        opacity: 0;
+        transition: all 0.3s ease 0s;
+        
     }
 }
 .sub-menu__content_small {
     min-width: 158px;
 }
 .sub-menu:hover > .sub-menu__content {
+    opacity: 1;
     visibility: visible;
 }
 .sub-menu__recipes:hover > .sub-menu__block {
@@ -357,9 +359,8 @@
         transition: all 0.3s ease 0s; 
     }
 }
-//-------------------------BURGER MENU--------------------------//
-
-.burger-menu {
+//-------------------------BURGER-BUTTON (кнопка бургер меню)--------------------------//
+.burger-button {
     opacity: 0;
     display: flex;
     align-items: center;
@@ -396,7 +397,8 @@
 }
 
 @media (max-width:991.98px){
-    .burger-menu{
+    
+    .burger-button{
        opacity: 1;
     }
     .header-icon {
@@ -410,19 +412,23 @@
 }
 
 .burger-menu {
+        position: fixed;
+        top: 0px;
+        right:0px;
+       
+        
     // .burger-menu__box
     &__box {
-        position: fixed;
-        top: 60px;;
-        right:0px;
+        opacity:;
+        display:flex;
+        flex-direction: column;
         width: 375px;
-        height:700px;
-        background-color: #FCFCFC;;
+        height: 700px;
+        background-color: #FCFCFC;
     }
 
     // .burger-menu__close
     &__close {
-        cursor: pointer;
         position: relative;
         left: 323px;
         top: 18px;
@@ -451,23 +457,6 @@
     }
 }
 .slider-menu {
-    
-    .check-mark {
-        width:24px;
-        height:24px;
-
-		// .check-mark__arrow
-		&__arrow {
-            height: 14px; width: 7px;
-	        border: 1.8px solid #85A9C7;
-	        border-width: 5px 0px 0 9px;
-	        transform: rotate(45deg);
-		}
-    }
-
-
-    
-    
     // .slider-menu__menu
     &__menu {
     }
@@ -481,6 +470,24 @@
         display:flex;
         justify-content: space-between;
         margin-bottom:28px;
+        
+
+        span {
+            width: 14px;
+            height: 7px;
+            border-radius:1.8px;
+            border: solid;
+            color: #85A9C7;
+            border-width: 0 2px 2px 0px;
+            display: inline-block;
+            padding: 3.5px 3.5px 7px 7px;
+            transform: rotate(-45deg);
+            transition: all 0.1s ease;
+            margin: auto 8px;
+            &:hover {
+              color: #8E0038;
+            }
+        }
     }
     // .slider-menu__link
     &__link {
