@@ -16,4 +16,5 @@ export function isWebp() {
             document.querySelector('html').classList.add('no-webp');
         }
     });
+
 }

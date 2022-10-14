@@ -1,0 +1,169 @@
+
+.tasteexperts {
+	overflow: hidden;
+	margin-bottom: 110px;
+}
+
+.swiper-tasteexperts-next{
+	right: 0;
+}
+.swiper-tasteexperts-prev {
+	left: 0;
+}
+
+.recipeoftheweek-button-next {
+	right: -76px;
+	top: 70%;
+}
+.recipeoftheweek-button-prev {
+	left: -76px;
+	top: 70%;
+}
+.swiper-slide {
+}
+.slide-tasteexperts {
+	max-width: 327px;
+
+	@media (max-width: $md3){
+		max-width: 150px;
+	}
+	
+}
+.expert-block {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.expert-top {
+	flex-grow: 1;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	position: relative;
+	&:not(:last-child) {
+		margin-bottom: 26px;
+	}
+	@media (max-width: $md3){
+		display: flex;
+		flex-direction: column;
+	}
+}
+.expert-image {
+	width: 106px;
+	height: 106px;
+	&-block {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+		
+	}
+	&-badge {
+		position: absolute;
+		top: 0;
+		left: 4px;
+	}
+}
+.expert-text {
+	flex-grow: 1;
+}
+.expert-name {
+}
+.expert-link {
+	flex-grow: 1;
+	font-family: $fontNorms;
+	font-weight: 500;
+	line-height: 115%;
+	z-index: 3;
+	&_salad {
+		z-index: 4;
+		color: #A5CA5C;
+	}
+	&_gray {
+		color: $gray;
+	}
+}
+.expert-link-main {
+	&::before {
+		content: "";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+.expert-position {
+}
+.expert-bottom {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	&-item {
+		&:nth-child(2) {
+			margin-left: -4%;
+			@media (max-width: $md3){
+				display: none;
+			}
+		}
+		&:nth-child(1) {
+			@media (max-width: $md3){
+				display: none;
+			}
+		}
+		&:nth-child(3) {
+			margin-left: -4%;
+			z-index: 3;
+		}
+	}
+}
+.expert-bottom-image {
+	border: 3px solid #FCFCFC;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+.m-universal__button_border {
+	border: 3px solid #FCFCFC;
+}
+// -----------------------------CARD----------------------
+.card-box {
+}
+.card {
+
+		// .card__column
+
+		&__column {
+		}
+}
+.card-column {
+
+		// .card-column__image
+
+		&__image {
+		}
+}
+.card-column-inner {
+}
+.card-image {
+}
+.block-badge {
+
+		// .block-badge_recipes
+
+		&_recipes {
+		}
+}
+.article-badge {
+}
+.card-autore {
+}
+.card-text {
+}
+.card-title {
+}
+
+

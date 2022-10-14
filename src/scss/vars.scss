@@ -5,6 +5,18 @@ $fontSize: rem(18);
 
 //Основні кольори===================================
 $mainColor: #000;
+$burgundy: #8E0038;
+$gray: #85A9C7;
+$sandy: #FFE7DC;
+$white: #FFFFFF;
+$pink: #CA4D70;
+$arrowbackground: #E2EAF4;
+$activebutton: #D9DD6B;
+$bodyColor: #fcfcfc;
+
+// =============================================
+$transitiononthree: all 0.3s ease 0.1s;
+$transitiononone: all 0.1s ease 0.1s;
 
 //Настройки =======================================
 //@@include('../img/user.svg',{})
@@ -27,29 +39,42 @@ $containerWidth: $maxWidthContainer + $containerPadding;
 
 
 //Брек-поінти
-$md1: 1080;//PC
-$md2: 991.98; //Table
-$md3: 767.98;//Mobile
-$md4: 479.98;
+$md1: 1080px;//PC
+$md2: 991.98px; //Table
+$md3: 767.98px;//Mobile
+$md4: 479.98px;
 
 //Загальні параметри
+
 body {
-	color: #2A1A1A;
+	color: #2a1a1a;
 	font-size: 18px;
 	font-family: $fontTravels;
-	background: #FCFCFC;
-
+	background: $bodyColor;
+	font-weight: 400;
 }
-.wrapper {
-	width: 100%;
-	min-height: 100%;
+body.__lock {
 	overflow: hidden;
-	display: flex;
-	flex-direction: column;
 }
 ._container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
 	padding: 0px 20px;
+}
 
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	flex: 1 1 auto;
+}
+.mySwiper2 {
+	width: 50%;
+	height: 264px;
+}
+.mySwiper {
+	width: 50%;
+	height: 390px;
 }

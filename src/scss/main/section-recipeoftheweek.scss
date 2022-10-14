@@ -1,0 +1,180 @@
+
+.recipeoftheweek {
+	overflow: hidden;
+	margin-bottom: 47px;
+}
+.recipeoftheweek-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+.swiper-week-slide {
+	&:hover .s-slide-image  {
+		border: 5px solid $burgundy;
+	}
+	&:hover .s-slide-text  {
+		color: $burgundy;
+	}
+}
+.m-title_forweek {
+	max-width: 200px;
+}
+.swiper-week1 {
+	max-width: 715px;
+	position: relative;
+	margin-right: 76px;
+	display: flex;
+	align-items: center;
+}
+.s-slide-text {
+	font-family: $fontNorms;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 300%;
+	text-align: center;
+	color: $gray;
+	transition: $transitiononone;
+}
+.s-slide-image {
+	display: block;
+	width: 81px;
+	height: 54px;
+	border-radius: 27px;
+	overflow: hidden;
+	cursor: pointer;
+
+	img {
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+	// &:hover {
+	// 	border: 5px solid $burgundy;
+	// }
+}
+.s-slide-box {
+	max-width: 90px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&:hover {
+		color: $burgundy;
+	}
+}
+.image-day {
+	width: 100%;
+	height: 100%;
+}
+.recipeoftheweek-button-next {
+	right: -76px;
+	top: 70%;
+}
+.recipeoftheweek-button-prev {
+	left: -76px;
+	top: 70%;
+}
+.s-box-article {
+	max-height: 370px;
+	background-color: $sandy;
+	border-radius: 20px;
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.s-article-image {
+	overflow: hidden;
+}
+.s-article-card {
+	width: 100%;
+	height: 100%;
+}
+.s-box-article:hover .article-image {
+	transform: scale(1.05);
+}
+
+.like-recipeoftheweek {
+	top: 298px;
+	left: 483px;
+}
+.s-article-content {
+	flex-grow: 1;
+	padding: 28px 40px 30px 40px;
+	display: flex;
+	flex-direction: column;
+}
+.s-article-link {
+	max-width: 475px;
+	&::before {
+		content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+	}
+}
+.swiper-slide-active.s-slide-image{
+	border: 5px solid $burgundy;
+}
+.sw-bottom {
+	margin-top: auto;
+}
+// -------------------------------------ARTICLE-BIG-------------------------------
+
+.article-box-big {
+	width: 100%;
+	display: flex;
+	margin: 0;
+	@media (max-width: $md2){
+		display: flex;
+		width: 320px;
+	}
+}
+
+.ar-columnbig {
+	display: flex;
+	flex-direction: row;
+	/*----------Table-------------*/
+	// .ar-columnbig__image
+
+	&__image {
+		display: flex;
+		flex: 1 1 50%;
+	}
+	&__content {
+		display: flex;
+		flex: 1 1 50%;
+		padding: 28px 40px 30px 40px;
+	}
+	&-bottom {
+		order: 3;
+	}
+}
+.ar-columnbig-inner {
+	display: flex;
+	flex-direction: row;
+	@media (max-width: $md2){
+		display: flex;
+		flex-direction: column;
+	}
+}
+.ar-columnbig-like {
+	position: absolute;
+	top: 83%;
+	left: 42%;
+}
+.ar-columnbig-autore {
+	order: 3;
+	&:not(:last-child) {
+		margin-bottom: 0;
+	}
+}
+.ar-columnbig-details {
+	display: none;	
+}

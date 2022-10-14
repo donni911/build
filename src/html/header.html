@@ -1,4 +1,5 @@
 <header class="header">
+	<div class="header-overlay js-overlay js-close"></div>
 	<div class="header__container _container">
 		<nav class="hd-nav__row hd-nav__main">
 			<a href="#" class="hd-nav__logo">
@@ -11,26 +12,29 @@
 						<div class="additional-menu additional-menu__section">
 							<div class="additional-menu__container _container">
 								<div class="additional-menu__colums">
-									<div class="additional-menu__column additional-column_big">
-										<article class="additional-column__big-active">
-											<div class="additional-column__top">
-												<a href="#" class="additional-column__image">
-													<img src="../img/header/main-course.jpg" alt="main-dish">
-												</a>
-												<a href="#" class="additional-column__recipe">Рецепт дня</a>
-												<button class="additional-column__like">
-													@@include('../img/heart.svg',{})
-												</button>
-											</div>
-											<div class="additional-column_bottom">
-												<a href="#" class="additional-column__author author-dish">Надія Ковбасенко</a>
-												<h3 class="additional-column__title-dish title-dish">Справжній український борщ із шкварками 
-													<br>	та сметанкою<span></span></h3>
-												<a class="additional-column__time">
-													@@include('../img/header/header-time.svg',{})
-													<p class="additional-column__time-text">20 хв</p>
-												</a>
-												
+									<div class="article-box">
+										<article class="slider__column article-column">
+											<div class="article-column-inner">
+												<div class="article-column__image">
+													<img class="article-image" src="../../img/header/main-course.jpg" alt="">
+													<div class="block-badge article-badge block-badge_recipes">
+														<span>Рецепт дня</span>
+													</div>
+													<button class="like btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+														@@include('../img/heart.svg',{})
+													</button>
+												</div>
+												<div class="article-column__content">
+													<a href="https://shuba.life/authors/chubukova" class="content-autore">Надія Ковбасенко</a>
+													<h3 class="content-text">
+														<a href="https://shuba.life/" class="content-title">Справжній український борщ із шкварками 
+															та сметанкою
+														</a>
+													</h3>
+													<div class="content-details details">
+														<p class="details-time">20 хв</p>
+													</div>
+												</div>
 											</div>
 										</article>
 									</div>
@@ -43,19 +47,55 @@
 												<a class="additional-column__link">Європейська</a>
 											</div>
 											<div class="additional-column__item">
-												<a class="additional-column__link">Європейська</a>
+												<a class="additional-column__link">Азійська</a>
 											</div>
 											<div class="additional-column__item">
-												<a class="additional-column__link">Європейська</a>
+												<a class="additional-column__link">Африканська</a>
 											</div>
 											<div class="additional-column__item">
-												<a class="additional-column__link">Європейська</a>
+												<a class="additional-column__link">Глобальна</a>
 											</div>
 											<div class="additional-column__item">
-												<a class="additional-column__link">Європейська</a>
+												<a class="additional-column__link">Українська</a>
 											</div>
 											<div class="additional-column__item">
-												<a class="additional-column__link">Європейська</a>
+												<a class="additional-column__link">Італійська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Французька</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Грузинська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Польська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Британська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Мексикаканська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Іспанська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Китайська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Японська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Тайська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Індійська</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Грецька</a>
+											</div>
+											<div class="additional-column__item">
+												<a class="additional-column__link">Німецька</a>
 											</div>
 										</div>
 										<div class="additional-menu__column additional-column__list">
@@ -206,15 +246,26 @@
             		@@include('../img/header/search.svg',{})
 					</button>
 					<div class="nav-left__box-search box-search">
+						<div class="box-search__head">
+							<form action="#" class="box-search__form">
+								<button type="submit" class="box-search__buttonsumbit">
+									@@include('../img/header/search.svg',{})
+								</button>
+								<input type="text" placeholder="Що приготуємо?">
+								<button class="box-button__close box-search__buttonclose js-close">
+									<span type="button" class="hd-burger__close"></span>
+								</button>
+							</form>
+						</div>
 						<ul class="box-search__list">
 							<li class="box-search__item-often"></li>
-							<li><a href="#" class="box-search__link"></a></li>
-							<li><a href="#" class="box-search__link"></a></li>
-							<li><a href="#" class="box-search__link"></a></li>
-							<li><a href="#" class="box-search__link"></a></li>
-							<li><a href="#" class="box-search__link"></a></li>
-							<li><a href="#" class="box-search__link"></a></li>
-							<li><a href="#" class="box-search__link"></a></li>
+							<li class="box-search__item"><a href="#" class="box-search__link"></a></li>
+							<li class="box-search__item"><a href="#" class="box-search__link"></a></li>
+							<li class="box-search__item"><a href="#" class="box-search__link"></a></li>
+							<li class="box-search__item"><a href="#" class="box-search__link"></a></li>
+							<li class="box-search__item"><a href="#" class="box-search__link"></a></li>
+							<li class="box-search__item"><a href="#" class="box-search__link"></a></li>
+							<li class="box-search__item"><a href="#" class="box-search__link"></a></li>
 						</ul>
 					</div>
 					
@@ -225,25 +276,30 @@
 					</button>
 				</div>
 				<div class="nav-left__avatar">
-					<button class="nav-left__avatar-button">
+					<button class="nav-left__avatar-button js__avatar">
             		@@include('../img/header/user.svg',{})
-          		</button>
+          		</button>					
 				</div>
-				<div class="hd-burger__button" id="toggler">
+				<button class="hd-burger__button js-burger" id="burger">
 					<span></span>
-				</div>
+				</button>
 		</div>
 		</nav>
 	</div>
 </header>
-<div class="header-burger hd-burger">
-	<div class="hd-burger__top">
-		<span></span>
+<div class="js-menu header-burger">
+	<div class="hd-burger__top box-button box-button__arrow-close">
+		<button class="box-button__arrow box-button__notarrow">
+			<span class="hd-burger__arrow js-arrow"></span>
+		</button>
+		<button class="box-button__close js-close">
+			<span type="button" class="hd-burger__close"></span>
+		</button>
 	</div>
 	<nav class="hd-burger__nav" id="burger">
 		<ul class="hd-burger__list">
-			<li class="hd-burger__item">
-				<button class="hd-burger__btn"id="burger-button1">Рецепти</button>
+			<li class="hd-burger__item js-button1">
+				<button class="hd-burger__btn">Рецепти</button>
 				<span></span>
 			</li>
 			<li class="hd-burger__item">
@@ -266,7 +322,7 @@
 				<button class="hd-burger__btn" id="burger-button6">Хелсі Шуба</button>
 				<span></span>
 			</li>
-			</li>
+			
 			<li class="hd-burger__item">
 				<button class="hd-burger__btn"id="burger-button7">Шуба TV</button>
 				<span></span>
@@ -278,3 +334,75 @@
 		</ul>
 	</nav>
 </div>
+<div class="js-menu2 header-burger">
+	<div class="hd-burger__top box-button box-button__arrow-close">
+		<button class="box-button__arrow js-back">
+			<span type="button" class="hd-burger__arrow js-arrow"></span>
+		</button>
+		<button class="box-button__close js-close">
+			<span type="button" class="hd-burger__close"></span>
+		</button>
+	</div>
+	<nav class="hd-burger__nav" id="burger">
+		<ul class="hd-burger__list">
+			<li class="hd-burger__item">
+				<a href="https://www.bing.com/maps" class="hd-burger__btn js-button1">Рецепти</a>
+			</li>
+			<li class="hd-burger__item">
+				<a href="#" class="hd-burger__btn js-button1">Рецепти</a>
+			</li>
+			<li class="hd-burger__item">
+				<a href="#" class="hd-burger__btn js-button1">Рецепти</a>
+			</li>
+			<li class="hd-burger__item">
+				<a href="#" class="hd-burger__btn js-button1">Рецепти</a>
+			</li>
+			<li class="hd-burger__item">
+				<a href="#" class="hd-burger__btn js-button1">Рецепти</a>
+			</li>
+			<li class="hd-burger__item">
+				<a href="#" class="hd-burger__btn js-button1">Рецепти</a>
+			</li>
+			</li>
+			<li class="hd-burger__item">
+				<a href="#" class="hd-burger__btn js-button1">Рецепти</a>
+			</li>
+			<li class="hd-burger__item">
+				<a href="#" class="hd-burger__btn">Рецепти</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!---------Modal-------------------------------->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h1 class="modal-title fs-5" id="exampleModalLabel">Авторизація</h1>
+			<button type="button" class="box-button__close btn-close" data-bs-dismiss="modal" aria-label="Close">
+				<span></span>
+			</button>
+		</div>
+		<div class="modal-body">
+			Увійдіть у свій акаунт за допомогою пошти, 
+			або використайте акаунт соц. мережі
+		</div>
+		<div class="modal-footer">
+			<div class="buttons-social__box">
+				<div class="button-social__box">
+					<img src="../img/header/google-image.jpg" alt="">
+					<a href="https://www.google.com.ua" class="button-social button-social_google">Google</a>
+				</div>
+				<div class="button-social__box">
+					<img src="../img/header/facebook-image.jpg" alt="">
+					<a href="" class="button-social button-social_facebook">Facebook</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- Button trigger modal -->
+
+

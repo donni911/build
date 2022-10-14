@@ -1,0 +1,15 @@
+
+.doitfast {
+	overflow: hidden;
+	background: #F0CED4;
+	padding: 79px 0px 100px 0px;
+}
+.swiper-doitfast-next {
+	right: 0;
+}
+.swiper-doitfast-prev {
+	left: 0;
+}
+.swiper-doitfast-prev,.swiper-doitfast-next {
+	background-color: $arrowbackground;
+}

@@ -2,6 +2,7 @@
 
 //Підключення шрифтів=============================================================================================
 @import "fonts";
+
 // @import "fonts-2";
 
 //Обнулення і загальні параметри
@@ -9,5 +10,27 @@
 
 @import "vars";
 @import "header";
+@import "main";
 @import "footer";
+@import "../../node_modules/swiper/swiper.scss";
+
+// bootstrap styles
+// @import './vendor/bs-components/mixins';
+// @import './vendor/bs-components/variables';
+
+// @import './vendor/bs-components/grid';
+// @import './vendor/bs-components/utilities';
+
+// @import './vendor/bs-components/modal';
+// @import '../../node_modules/swiper/modules/navigation/navigation.scss';
+// @import "../../node_modules/swiper/modules/pagination/pagination.scss";
+// @import '../../node_modules/swiper/modules/navigation/navigation.scss';
+// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/_variables';
+@import '../../node_modules/bootstrap/scss/_mixins';
+@import '../scss/vendor/bs-components/modal.scss';
+
+// @import "swiper/scss/effect-cards";
+// @import "../../node_modules/swiper/modules/effect-fade/effect-fade.scss";
 

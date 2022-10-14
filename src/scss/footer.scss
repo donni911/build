@@ -1,0 +1,148 @@
+.footer {
+	height: 100%;
+	background: #FFE7DC;
+
+
+	// .footer__container
+
+	&__container {
+		display: flex;
+		flex-grow: 1;
+		height: 100%;
+		justify-content: space-between;
+		padding: 26px 20px 46px 20px;
+		@media (max-width: $md2){
+			flex-wrap: wrap;
+		}
+	}
+
+	// .footer__logo
+
+	&__logo {
+		padding-right: 75px;
+		@media (max-width: $md2){
+			padding-right: 40px;
+		}
+	}
+
+	// .footer__nav-menu
+
+	&__nav-menu {
+		padding-top: 4px;
+		/*----------Table-------------*/
+		@media (max-width: $md2){
+			order: 3;
+			justify-content: center;
+			padding-bottom: 36px;
+			position: relative;
+		}
+	}
+}
+
+.ft-menu {
+	display: flex;
+	flex: 0 1 496px;
+	justify-content: space-between;
+	/*----------Table-------------*/
+	@media (max-width: $md2){
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+	// .ft-menu__column
+
+	&__column {
+		display: flex;
+		min-width: 12.37%;
+		&:not(:last-child) {
+			// margin-right: 53px;
+		}
+		/*----------Table-------------*/
+		@media (max-width: $md2){
+			&:not(:last-child) {
+				margin-bottom: 14px;
+				margin-right: 35px;
+			}
+		}
+
+	}
+
+	// .ft-menu__list
+
+	&__list {
+		&:last-child {
+			margin-right: 15px;
+		}
+	}
+
+	// .ft-menu__item
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 14px;
+		}
+	}
+	&__link {
+		font-family: $fontNorms;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 18px;
+		letter-spacing: -0.01em;
+		color: #2A1A1A;
+		&:hover {
+			color: #8E0038;
+		}
+	}
+}
+.ft-social__block {
+	/*----------Table-------------*/
+	@media (max-width: $md2){
+		width: 50%;
+	}
+}
+.social {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 2px;
+	padding-bottom: 46px;
+
+	// .social__row
+
+	&__row {
+	}
+
+	// .social__item
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-right: 18px;
+		}
+		@media (max-width: $md2){
+		}
+	}
+
+	// .social__link
+
+	&__link {
+		
+	}
+}
+.madeinideil {
+	display: none;
+	@media (max-width: $md2){
+		order: 6;
+		flex: 0 1 100%;
+		display: block;
+	}
+}
+#more {
+	display: none;
+}
+.madeinideil_pc {
+	display: block;
+	@media (max-width: $md2){
+		display: none;
+	}
+}
