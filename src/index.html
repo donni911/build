@@ -3,18 +3,22 @@
 @@include('html/head.html',{
 "title":"Main"
 })
-
 <body>
-    
-    @@include('html/header.html',{
-    })
-    <main class="main">
-        
-        </main>
-      <!-- @@include('html/footer.html',{
-    })  -->
-    @@include('html/script.html',{
-    })
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="main">  
+        @@include('html/main-page/section-home.html',{})
+        @@include('html/main-page/section-newfromshuba.html',{})
+        @@include('html/main-page/section-recipesweek.html',{})
+        @@include('html/main-page/section-experts-taste.html',{})
+        @@include('html/main-page/section-do-it-fast.html',{})
+        @@include('html/main-page/section-now-in-trend.html',{})
+        @@include('html/main-page/section-similar-articles.html',{})
+        @@include('html/main-page/section-tastytags.html',{})
+      </main>
+        @@include('html/footer.html',{}) 
+    </div>
+    @@include('html/script.html',{})
 </body>
 
 </html>

@@ -1,12 +1,25 @@
 $fontNorms: "TTNorms";
-$fontTravels: "TTTravels", sans-serif;
+$fontTravels: "TTTravels";
 
 
 
 $burgundy:#8E0038;
+$red:#FF534D;
 $gray: #85A9C7;
 $black: #2A1A1A;
 $white:#FCFCFC;
 $orange:#FF8B3C;
 $pink: #CA4D70;
 $sandy: #FFE7DC;
+$green:#A3AC41;
+$blue:#6FB2EA;
+$gray_2: #E2EAF4;
+$gray_3:#85A9C7;
+$gray_1:#C1D5E4;
+$salad:#D9DD6B;
+
+
+//Linear-gradients//
+$gradient_1: linear-gradient(180deg, rgba(142, 0, 56, 0) 43.11%, rgba(142, 0, 56, 0.65) 75.4%, #8E0038 100%);
+$gradient_2: linear-gradient(180deg, rgba(255, 231, 220, 0) 50.26%, #FFE7DC 79.87%);
+

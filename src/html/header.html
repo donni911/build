@@ -1,4 +1,5 @@
-<header id='header' class="header">
+<header class="header">
+  <div class="header-overlay js-overlay js-close"></div>
   <div class="header__container _container">
     <a href="#" class="header__logo">@@include('../img/shuba_logo.svg',{})</a>
     <nav class="menu">
@@ -9,22 +10,23 @@
               <div class="sub-menu__block">
                 <div class="sub-menu__container _container">
                   <div class="sub-menu__items">
-                    <div class="sub-menu__item sub-menu__item-article">
-                      <article class="sub-menu__column article-column">
-                        <div class="article-column__top">
-                            <img src="../img/recipes/main-dish.jpg" alt="borsch">
-                            <div class="badg__active">
-                              <span class="badg__recipes">Рецепт дня</span>
+                    <div class="sub-menu__item_article">
+                      <article class="article-card">
+                        <div class="article-card-inner">
+                          <div class="img-box">
+                            <img src="../img/recipes/main-dish.jpg" alt="borsch" class="article-image">
+                            <div class="badg__active badg__active_orange">
+                              Рецепт дня
                             </div>
-                          <button class="article-column__like">@@include('../img/heart.svg',{})</button>
-                        </div>
-                        <div class="article-column__bottom">
-                          <a href="#" class="article-column__autor"> Надія Ковбасенко</a>
-                          <a href="#" class="article-column__title">Справжній український  борщ із шкварками та сметаною</a>
-                          <a href="#" class="article-column__time">
-                            @@include('../img/clock.svg',{}) 
-                            <p class="">20 хв</p>
-                          </a>               
+                          </div>
+                          <div>
+                            <button class="btn btn-primary like" data-bs-toggle="modal" data-bs-target="#staticBackdrop">@@include('../img/heart.svg',{})</button>
+                          </div>
+                          <div class="article-content">
+                            <a href="#" class="article-content__author">Надія Ковбасенко</a>
+                            <h3 class="article-content__title"><a href="#" class="article-content__link">Справжній український<br> борщ із шкварками <br>та сметаною</a></h3>
+                            <div class="article-content__time"><p>20 хв</p></div>
+                          </div>
                         </div>
                       </article>
                     </div>
@@ -94,7 +96,6 @@
                           </ul>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -167,62 +168,131 @@
     </nav>
     <div class="header_icons">
       <div class="header_icon header-icon">
-        <button class="header-icon__button">RU</button>
+        <a href="#" class="header-icon__link">RU</a>
       </div>
       <div class="header_icon header-icon">
-        <button href="#" class="header-icon__link">@@include('../img/search.svg',{})</button>
+        <button type="button" class="header-icon__button">@@include('../img/search.svg',{})</button>
       </div>
       <div class="header_icon header-icon">
-        <button href="#" class="header-icon__link">@@include('../img/heart.svg',{})</button>
+        <button type="button" class="header-icon__button">@@include('../img/heart.svg',{})</button>
       </div>
       <div class="header_icons header-icon">
-        <button href="#" class="header-icon__link"> @@include('../img/user.svg',{})</button>
+        <button type="button" class="header-icon__button modal-link"> @@include('../img/user.svg',{})</button>
+        <div  id="modal" class="modal">
+          <div class="modal-body">
+            <div class="modal-content">
+              <button  type="button"  class="modal-close close-modal"><span></span></button>
+              <div class="modal-title">Авторизація</div>
+              <div class="modal-text">Увійдіть у свій акаунт за допомогою пошти, <br>або використайте акаунт соц. мережі</div>
+              <div class="modal-controls">
+                <a href="#" class="modal-controls__btn">@@include('../img/google.svg',{}) Google</a>
+                <a href="#" class="modal-controls__btn">@@include('../img/facebook.svg',{})Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="header_icons header-icon">
-        <div class="burger-button">
+        <button class="js-burger burger-button">
           <span></span>
-        </div>
-      </div>
-    </div>
-    <div class="burger-menu">
-      <div class="burger-menu__box">
-        <div class="burger-menu__close">
-          <span></span>
-        </div>
-        <div class="slider-menu">
-          <nav class="slider-menu__menu">
-            <ul class="slider-menu__list">
-              <li class="slider-menu__item">
-                <a href="#" class="slider-menu__link">Рецепти</a>
-                <span></span>
-              </li>
-              <li class="slider-menu__item">
-                <a href="#" class="slider-menu__link">Гастро клуб</a>
-                <span></span>
-              </li>
-              <li class="slider-menu__item">
-                <a href="#" class="slider-menu__link"> Шуба святкує</a>
-                <span></span>
-              </li>
-              <li class="slider-menu__item">
-                <a href="#" class="slider-menu__link">Шуба дрінкує</a>
-                <span></span>
-              <li class="slider-menu__item">
-                <a href="#" class="slider-menu__link"> Хелсі Шуба</a>
-                <span></span>
-              </li>
-              <li class="slider-menu__item">
-                <a href="#" class="slider-menu__link">Шуба TV</a>
-                <span></span>
-              </li>
-              <li class="slider-menu__item">
-                <a href="#" class="slider-menu__link">Експерти смаку</a>
-                <span></span>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        </button>
       </div>
     </div>
   </div>  
 </header>
+<div class="burger-menu js-menu2">
+  <div class="burger-menu__top buttons">
+    <div class="button-arrow btn-arrow js-back">@@include('../img/arrow-back.svg',{})</div>
+    <div class="button-close js-close"><span></span></div>
+  </div>
+  <div class="burger-menu__slider slider">
+    <nav class="slider__slider-menu">
+      <ul class="slider-menu__list">
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link js-next">Шуба святкує</a>
+        </li>
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link">Меню на свята</a>
+        </li>
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link">Новорічне меню</a>
+        </li>
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link">Різдвяне меню</a>
+        </li>
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link">Пасхальне меню</a>
+        </li>
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link">День народження</a>
+        </li>
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link">Пікнік/барбекю</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="js-menu burger-menu">
+  <div class="burger-menu__top buttons">
+    <!-- <div class="button-arrow js-back">@@include('../img/arrow-back.svg',{})</div> -->
+    <div class="button-close js-close"><span></span></div>
+  </div>
+  <div class="burger-menu__slider slider">
+    <nav class="slider__slider-menu">
+      <ul class="slider-menu__list">
+        <li class="slider-menu__item ">
+          <button class="slider-menu__link js-next">Рецепти</button>
+          <span></span>
+        </li>
+        <li class="slider-menu__item ">
+          <button class="slider-menu__link js-next" >Гастро клуб</button>
+          <span></span>
+        </li>
+        <li class="slider-menu__item">
+          <button class="slider-menu__link js-next"> Шуба святкує</button>
+          <span></span>
+        </li>
+        <li class="slider-menu__item">
+          <button class="slider-menu__link js-btn-shuba-study">Шуба навчає</button>
+          <span></span>
+        </li>
+        <li class="slider-menu__item ">
+          <button class="slider-menu__link js-btn-shuba-drink">Шуба дрінкує</button>
+          <span></span>
+        </li>
+        <li class="slider-menu__item ">
+          <button class="slider-menu__link js-btn-healthy-shuba"> Хелсі Шуба</button>
+          <span></span>
+        </li>
+        <li class="slider-menu__item">
+          <button class="slider-menu__link js-btn-shubatv" >Шуба TV</button>
+          <span></span>
+        </li>
+        <li class="slider-menu__item">
+          <a href="#" class="slider-menu__link">Експерти смаку</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- --------------------------- MODAL-------------------------- -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,161 @@
+.section-recipesweek {
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+	padding: 95px 0px 109px 0px;
+	overflow: hidden;
+	// .section-recipesweek__container
+	&__container {
+		position: relative;
+	}
+}
+.recipesweek-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 28px;
+	
+}
+.mySwiper7 {
+	width: 100%;
+	height: 100%;
+}
+.recipes-week-slide {
+	max-width: 90px;
+	&:hover .recipes-week-slide-text {
+		color: $black;
+	}
+	&:hover .recipes-week-slide-image {
+		border: 5px solid $burgundy;
+	}
+}
+.recipes-week-box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 6px;
+	padding-right: 6px;
+	cursor: pointer;
+	&:hover {
+    color: $burgundy;
+	}
+}
+
+.recipes-week-slide-text {
+	font-family: $fontNorms;
+	margin-bottom: 8px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 54px;
+	text-align: center;
+	color: $gray;
+	transition: all 0.1s ease;
+}
+.recipes-week-slide-image {
+	display: block;
+	width: 81px;
+	height: 54px;
+	border-radius: 32px;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 5px;
+}
+.image-dish {
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 32px;
+}
+//-----------------------BIG ARTICLE (CARD-RECIPE)----------------------------------------//
+.item-article {
+	// .item-article__big
+	&__big {
+		display: flex;
+		width: 100%;
+		@media (max-width: 991.98px){
+			display: flex;
+			width: 320px;
+		}
+	}
+}
+.article-card {
+	// .article-card__big
+	&__big {
+		width: 100%;
+		display: flex;
+		
+	}
+}
+.article-card-inner {
+	// .article-card-inner__big
+	&__big {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		@media (max-width: 991.98px){
+			display: flex;
+			flex-direction: column;
+			width: 320px;
+		}
+	}
+}
+.img-box {
+	// .img-box__big
+	&__big {
+		display: flex;
+		flex: 1 1 50%;
+	}
+}
+
+.article-image-bg {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.like-big{
+	position: absolute;
+	top: 83%;
+	left: 42%;
+	@media (max-width:991.98px){
+		position: absolute;
+		top: 187px;
+		left: 248px;	}
+}
+.article-content {
+	// .article-content__big
+	&__big {
+		padding: 28px 40px 30px 40px;
+		display: flex;
+		flex: 1 1 50%;
+		flex-grow: 1;
+	}
+}
+.article-content__link_big{
+	max-width: 475px;
+	line-height: 40px;
+	font-weight: 700;
+	font-size: 40px;
+	font-family: $fontTravels;
+	&::before{
+		content:"";
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		right: 0;
+		left: 0;
+	}
+}
+.article-content-big {
+
+	// .article-content-big__bottom
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+

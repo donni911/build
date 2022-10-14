@@ -1,0 +1,129 @@
+.section-similar-articles {
+	width: 100%;
+	height: 100%;
+	background-color: $white;
+	padding: 120px 0px 105px 0px;
+	overflow: hidden;
+	&__container {
+		display: flex;
+		align-items: center;	
+		position: relative;
+	}
+}
+.similar-articles-block {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+
+	// .similar-articles-block__item-article
+	.item-article {
+		width: 730px;
+		height: 100%;
+		// .item-article_big
+		&_big {
+		
+			
+		}
+}
+.article-card {
+		// .article-card_big
+	&_big {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		border-radius: 20px;
+		background: linear-gradient(180deg, rgba(142, 0, 56, 0) 43.11%, rgba(142, 0, 56, 0.65) 75.4%, #8E0038 100%);
+	}
+}
+
+.ar-card-big {
+	position: absolute;
+	width: 100%;
+	flex-direction: column;
+
+}
+.img-box {
+	width:730px;
+	height: 487px;
+}
+
+.article-image-grow {
+	display: block;
+	overflow: hidden;
+	z-index: -3;	
+}
+
+.ar-content-big {
+	color: $white;
+	height: 100%;
+	z-index: 8;
+	justify-content: flex-end;
+	
+}
+
+	// .similar-articles-block__news-item
+	&__news-item {
+		display: block;
+		width: 350px;
+		height: 100%;
+		padding-left: 30px;
+	}
+}
+.news-title {
+	font-size: 30px;
+	margin-bottom: 23px;
+}
+.item-news {
+	display: inline-block;
+	flex-grow: 1;
+	
+	&:not(:last-child){
+		margin-bottom: 24px;
+	}
+		// .item-news__author
+		&__author {
+			z-index:5;
+        	padding-bottom: 8px;
+        	font-weight: 400;
+        	font-family: $fontNorms;
+        	font-size: 14px;
+        	line-height: 17px;
+        	color: $pink;
+		}
+
+		// .item-news__title
+		&__title {
+			font-weight: 600;
+   		font-style: normal;
+   		font-family: $fontTravels;
+   		font-size: 18px;
+   		line-height: 115%;
+			color: $black;
+			flex-grow: 1;
+		}
+
+		// .item-news__link
+
+		&__link {
+			font-weight: 700;
+   		font-style: normal;
+   		font-family: $fontTravels;
+   		font-size: 18px;
+   		line-height: 115%;
+			color: $black;
+		}
+}
+
+
+
+	
+
+
+
+
+

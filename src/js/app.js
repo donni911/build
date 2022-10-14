@@ -1,9 +1,15 @@
 import * as flsFunctions from "./modules/functions.js"
-import "./modules/menu.js"
-
 flsFunctions.isWebp();
+import './modules/swiper.js';
+import './modules/burger.js';
+import './modules/functions.js';
+// import * as bootstrap from 'bootstrap';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 
-let btn = document.getElementById('menu');
- btn.addEventListener('click',()=>{
-    console.log('clickdsadasdas');
- })
+
+
+
+
+// function.burgerMenu() => {
+// 	alert
+// }

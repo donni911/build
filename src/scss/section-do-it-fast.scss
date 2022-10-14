@@ -1,0 +1,42 @@
+.section-do-it-fast {
+	width: 100%;
+	height: 100%;
+	background-color: #F0CED4;
+	padding: 61px 0px 95px 0px;
+	overflow: hidden;
+
+	// .section-do-it-fast__container
+	&__container {
+		display: flex;
+		position: relative;
+	}
+}
+.do-it-fast-block {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.heading {
+	// .heading__buttons
+	&__buttons {
+		@media (max-width:991.98px){
+			display: none;
+		}
+		
+	}
+}
+.swiper {
+}
+.mySwiper4 {
+	width: 100%;
+	height: 100%;
+	padding-bottom: 30px;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.do-it-fast-slide {
+
+}
+
