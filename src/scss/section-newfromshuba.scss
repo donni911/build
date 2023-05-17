@@ -20,14 +20,11 @@
 	
 }
 .heading {
-
 	// .heading__buttons
-
 	&__buttons {
 		@media (max-width:991.98px){
 			display: none;
 		}
-		
 	}
 }
 .heading {
@@ -37,13 +34,10 @@
 	padding-bottom: 16px;
 
 		// .heading__title
-
 		&__title {
 			display: flex;
 		}
-
 		// .heading__buttons
-
 		&__buttons {
 			position: relative;
 			width: 125px;
@@ -69,7 +63,7 @@
 .newfromshuba-slide {
 	width: 320px;
 	height: 400px;
-	
+
 }
 
 .mySwiper3{

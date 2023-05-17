@@ -10,114 +10,170 @@
 		position: relative;
 	}
 }
+
 .similar-articles-block {
-	width: 100%;
+	width:100%;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
-	
 
 	// .similar-articles-block__item-article
-	.item-article {
-		width: 730px;
-		height: 100%;
-		// .item-article_big
-		&_big {
+	&__item-article{
+		max-width:730px;
+		width:100%;
 		
-			
-		}
-}
-.article-card {
-		// .article-card_big
-	&_big {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		overflow: hidden;
-		border-radius: 20px;
-		background: linear-gradient(180deg, rgba(142, 0, 56, 0) 43.11%, rgba(142, 0, 56, 0.65) 75.4%, #8E0038 100%);
+		
 	}
-}
-
-.ar-card-big {
-	position: absolute;
-	width: 100%;
-	flex-direction: column;
-
-}
-.img-box {
-	width:730px;
-	height: 487px;
-}
-
-.article-image-grow {
-	display: block;
-	overflow: hidden;
-	z-index: -3;	
-}
-
-.ar-content-big {
-	color: $white;
-	height: 100%;
-	z-index: 8;
-	justify-content: flex-end;
-	
-}
-
 	// .similar-articles-block__news-item
 	&__news-item {
 		display: block;
-		width: 350px;
+		max-width: 350px;
 		height: 100%;
-		padding-left: 30px;
+		margin-left: 30px;
 	}
 }
+//-----Заголовок "Схожі статті"--------//
 .news-title {
 	font-size: 30px;
 	margin-bottom: 23px;
 }
+//----Article card(type2)--------//
+.item-article {
+	// .item-article__type2
+	&__type2 {
+		width: 730px;
+		height: 487px;
+	}
+}
+.article-card {
+	// .article-card__type2
+	&__type2 {
+		position: relative;
+	}
+}
+.article-card-inner {
+}
+.img-box {
+	// .img-box__type2
+	&__type2 {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height: 100%;
+	}
+}
+.article-image {
+}
+
+.article-content {
+	// .article-content__type2
+	&__type2 {
+		position: absolute;
+  		bottom: 0;
+  		left: 0;
+  		padding: 20px;
+		width: 100%;
+	}
+	// .article-content__title
+	&__title {
+		// .article-content__title_white
+		&_white {
+			color:white;
+			font-size:40px;
+			line-height: 40px;
+			font-weight: 700;
+			&:not(:last-child){
+            margin-bottom: 11px;
+        } 
+		}
+	}
+	// .article-content__link
+	&__link {
+		// .article-content__link_white
+		&_white {
+			color:white;
+			font-size:40px;
+			line-height: 40px;
+			font-weight: 600;
+		}
+	}
+	
+
+	// .article-content__author
+
+	&__author {
+		// .article-content__author_white
+		&_white {
+			color:white;
+		}
+	}
+}
+
+
+//-----Блок статтей-------------------//
 .item-news {
 	display: inline-block;
 	flex-grow: 1;
-	
 	&:not(:last-child){
 		margin-bottom: 24px;
 	}
 		// .item-news__author
 		&__author {
-			z-index:5;
-        	padding-bottom: 8px;
         	font-weight: 400;
         	font-family: $fontNorms;
         	font-size: 14px;
         	line-height: 17px;
         	color: $pink;
+			z-index: 8;
+			padding-bottom: 8px;
 		}
 
 		// .item-news__title
 		&__title {
+			font-family: $fontTravels;
+			font-size: 18px;
+   		line-height: 20.7px;
 			font-weight: 600;
    		font-style: normal;
-   		font-family: $fontTravels;
-   		font-size: 18px;
-   		line-height: 115%;
 			color: $black;
-			flex-grow: 1;
 		}
-
 		// .item-news__link
-
 		&__link {
 			font-weight: 700;
-   		font-style: normal;
-   		font-family: $fontTravels;
-   		font-size: 18px;
-   		line-height: 115%;
 			color: $black;
 		}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

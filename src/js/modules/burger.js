@@ -12,11 +12,12 @@ burgerMenu.addEventListener("click", function () {
 });
 
 nextMenu.addEventListener("click", function () {
-  openMenu2.classList.add("__active");
+  openMenu2.classList.toggle("__active");
 });
 backMenu.addEventListener("click", function () {
   openMenu2.classList.toggle("__active");
 });
+
 // --------------------CLOSEMENU-------------------------------
 let closeMenu = document.querySelectorAll(".js-close");
 for (let closes of closeMenu) {

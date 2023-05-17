@@ -1,7 +1,7 @@
 //------секція Головна-----//
 .section-home {
 	margin-top:60px;
-	width:100%;
+	width: 100%;
 	height: 100%;
 	background-color: $sandy;
 	padding: 75px 0px 70px 0px;
@@ -11,49 +11,45 @@
 		justify-content: space-between;
 		align-items: center;	
 		position: relative;
-		@media (max-width:991.92px){
-			flex-direction: column-reverse;
-		};
 	}
 }
 
 //----swiper( article)----------------------------------------//
 .mySwiper2 {
-	width: 50%;
-	height: 100%;
- }
+	width: 540px;
+	height: 264px;
+}
 .item-h-slide{
-	max-width:540px;
-	height:100%;
+	width: 540px;
+	height: 100%;
 	background-position: center;
 	background-size: cover;
 }
 
 .item {
-	padding-left: 5px;
-	padding-right: 32px;
-	width: 100%;
-	height: 100%;
+	width: 540px;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-
+	padding-left: 5px;
+	padding-right: 32px;
 	// .item_detail
 	&_detail {
 		display: inline-flex;
-		padding: 0px 4px 0px 0px;
+		&:not(:last-child){
+			margin-right: 24px;
+		}
+		// padding: 0px 4px 0px 0px;
 	}
 }
 .item-tags {
 	width: 100%;
 	gap: 8px;
-	padding-bottom: 24px;
+	margin-bottom: 21px;
 }
 .item-content {
-	width: 100%;
-	height: 100%;
+	width: 540px;
 	flex-grow: 1;
-
 	// .item-content__title
 	&__title {
 		span{
@@ -65,9 +61,7 @@
 			color: $burgundy; 
 		}
 	}
-
 	// .item-content__link
-
 	&__link  {
 		font-family: $fontTravels;
 		font-size: normal;
@@ -79,15 +73,13 @@
 	}
 }
 .item-details {
+	
 	display: inline-flex;
 	align-items: center;
-	padding-top:18px;
+	margin-top: 21px;
 	flex-grow: 1;
 }
 .item-detail {
-	&:not(:last-child){
-		margin-right: 8px;
-	}
 	// .item-detail__author
 	&__author {
 		font-weight: 400;
@@ -135,11 +127,11 @@
 
 //--------swiper (effect card)
 .mySwiper {
-	width: 50%;
-	height: 389px;
+	width: 540px;
+	height: 389.47px;
 }
 .img-h-slide{
-	width: 507px;
+	min-width: 507px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -154,9 +146,149 @@
 	background-image: url('../img/swiper/blueberry.jpg');
 }
 
- .img-h-slide:nth-child(3n) {
+.img-h-slide:nth-child(3n) {
 	background-image: url('../img/swiper/pepers.jpg');
- }
+}
+
+
+@media (max-width: 991.92px){
+	.section-home {
+		margin-top:30px;
+		width:100%;
+		height: 100%;
+		padding: 60px 0px 44px 0px;
+		// .section-home__container
+		&__container {
+			flex-direction: column-reverse;
+			align-items: center;	
+		}
+	}
+	.mySwiper2 {
+		width: 540px;
+		height: 264px;
+	}
+	.item-h-slide{
+		width: 319px;
+		background-position: center;
+		background-size: cover;
+	}
+	
+	.item {
+		width: 540px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding-left: 5px;
+		padding-right: 32px;
+		// .item_detail
+		&_detail {
+			display: inline-flex;
+			&:not(:last-child){
+				margin-right: 24px;
+			}
+			// padding: 0px 4px 0px 0px;
+		}
+	}
+	.item-tags {
+		width: 100%;
+		gap: 8px;
+		margin-bottom: 11px;
+	}
+	.item-content {
+		width: 100%;
+		height: 100%;
+		flex-grow: 1;
+		// .item-content__title
+		&__title {
+			span{
+				font-family: $fontTravels;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 30px;
+				color: $burgundy; 
+			}
+		}
+		// .item-content__link
+		&__link  {
+			font-family: $fontTravels;
+			font-size: normal;
+			font-weight: 600;
+			font-size: 30px;
+			line-height: 30px;
+			color: $burgundy;
+			flex-grow: 1;
+		}
+	}
+	.item-details {
+		display: inline-flex;
+		align-items: center;
+		margin-top: 17px;
+		flex-grow: 1;
+	}
+	.item-detail {
+		// .item-detail__author
+		&__author {
+			font-weight: 400;
+			align-items: center;
+			font-family: $fontNorms;
+			font-size: 14px;
+			line-height: 17px;
+			color: $burgundy;
+		}
+	
+		// .item-detail__star
+		&__star {
+			display: flex;
+			align-items: center;
+			font-family: $fontNorms;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			color: $burgundy;
+		}
+	
+		// .item-detail__time
+		&__time {
+			display: inline-flex;
+			align-items: center;
+			font-family: $fontNorms;
+			font-style: normal;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+			color: $black;
+			padding-left: 4px;
+		}
+	
+		// .item-detail__date
+		&__date {
+			display:none;
+		}
+	}
+	
+	//--------swiper (effect card)
+	.mySwiper {
+		width: 319px;
+		height: 389px;
+	}
+	.img-h-slide{
+		min-width: 299px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	
+}
+
+
+
+
+
 
 
 //-------Navigation--------//
@@ -166,7 +298,7 @@
  }
 }
 .swiper-button-prev,
-.swiper-button-next {
+.swiper-button-next{
 	position: absolute;
 	top: 50%;
 	border-radius: 50%;
@@ -210,6 +342,7 @@
 	right: -45px;
 }
 
+
 .swiper-newfromshuba-prev, .swiper-newfromshuba-next {
 	background-color: $gray_2;
 	top: 0;
@@ -229,7 +362,6 @@
 .swiper-experts-taste-prev, .swiper-experts-taste-next {
 	background-color: $gray_2;
 	top: 0;
-
 	// transform: translateY(-50%);
 }
 

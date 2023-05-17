@@ -7,7 +7,12 @@ var mySwiper = new Swiper(".mySwiper", {
   grabCursor: true,
   spaceBetween: 30,
   slidesPerView: 1,
-  
+  cardsEffect: {
+    perSlideOffset: 6,
+    perSlideRotate: 3,
+    slideShadows: true,
+    rotate: true,
+  } 
 });
 
 var mySwiper2 = new Swiper(".mySwiper2", {
@@ -24,6 +29,7 @@ var mySwiper2 = new Swiper(".mySwiper2", {
 mySwiper2.controller.control = mySwiper;
 mySwiper.controller.control = mySwiper2;
 
+
 var mySwiper3 = new Swiper(".mySwiper3", {
   modules: [Navigation, FreeMode],
 
@@ -32,13 +38,16 @@ var mySwiper3 = new Swiper(".mySwiper3", {
   freeMode: true,
   breakpoints: {
     320:{
-      slidesPerView:1,
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
     480: {
       slidesPerView:2,
+      spaceBetween: 25,
     },
     992: {
       slidesPerView: 3,
+      spaceBetween: 30,
     },
   },
   navigation: {

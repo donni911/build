@@ -22,7 +22,6 @@
 		@media (max-width:991.98px){
 			display: none;
 		}
-		
 	}
 }
 .swiper {
@@ -39,4 +38,24 @@
 .do-it-fast-slide {
 
 }
+
+
+
+//---------article-card(img-box with border-radius +linear gradient)----//
+.article-card {
+	// .article-card__2
+	&__2 {
+		background: $gradient_2;
+	}
+}
+.img-box {
+	// .img-box__2
+	&__2 {
+		border-radius: 20px;
+	}
+}
+
+
+
+
 

@@ -27,8 +27,9 @@ body{
 	font-style: normal;
 	background-color: $white;
 }
+
 body.__lock {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .wrapper{
@@ -37,7 +38,30 @@ body.__lock {
 	flex-direction: column;
 }
 .main{
-	flex:1 1 auto;
+	flex:1 0 auto;
+}
+
+input::-webkit-input-placeholder {
+	color: $gray_3; 
+	font-family: $fontNorms;
+	font-style: normal; 
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+ }
+input:-moz-placeholder {
+	color: $gray_3; 
+	font-family: $fontNorms;
+	font-style: normal; 
+	font-size: 16px;
+	background: transparent;
+}
+input:-ms-input-placeholder {
+	color: $gray_3; 
+	font-family: $fontNorms;
+	font-style: normal; 
+	font-size: 16px;
+	background: transparent;
 }
 
 
